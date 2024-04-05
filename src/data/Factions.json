@@ -1,0 +1,441 @@
+{
+  "Ork Kommandos": {
+    "Troops": [
+      {
+        "Kommando Boy": {
+          "stats": {
+            "M": 3,
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 10,
+            "Base": "32mm"
+          },
+          "weapons": [
+            {
+              "name": "Slugga",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": 3,
+              "Special_Rules": [
+                "Just A Scratch"
+              ]
+            },
+            {
+              "name": "Choppa",
+              "A": 4,
+              "BS_WS": "3+",
+              "D": 4,
+              "Special_Rules": [
+                "Sneaky Git"
+              ]
+            }
+          ],
+          "abilities": [],
+          "unique_actions": []
+        }
+      },
+      {
+        "Kommando Slasha Boy": {
+          "stats": {
+            "M": 3,
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 10,
+            "Base": "32mm"
+          },
+          "weapons": [
+            {
+              "name": "Throwing knives",
+              "A": 4,
+              "BS_WS": "3+",
+              "D": 2,
+              "Special_Rules": [
+                "Rng",
+                "Silent"
+              ]
+            },
+            {
+              "name": "Twin choppas",
+              "A": 4,
+              "BS_WS": "3+",
+              "D": 4,
+              "Special_Rules": [
+                "Relentless"
+              ]
+            }
+          ],
+          "abilities": [
+            "Dat All You Got?",
+            "Breach"
+          ],
+          "unique_actions": []
+        }
+      },
+      {
+        "Kommando Breacha Boy": {
+          "stats": {
+            "M": 3,
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 10,
+            "Base": "32mm"
+          },
+          "weapons": [
+            {
+              "name": "Slugga",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": 3,
+              "Special_Rules": [
+                "Just A Scratch"
+              ]
+            },
+            {
+              "name": "Breacha ram",
+              "A": 3,
+              "BS_WS": "3+",
+              "D": 5,
+              "Special_Rules": [
+                "Brutal"
+              ]
+            }
+          ],
+          "abilities": [
+            "Bull Charge",
+            "Breach"
+          ],
+          "unique_actions": []
+        }
+      },
+      {
+        "Kommando Snipa Boy": {
+          "stats": {
+            "M": 3,
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 10,
+            "Base": "32mm"
+          },
+          "weapons": [
+            {
+              "name": "Scoped big shoota",
+              "A": 6,
+              "BS_WS": "3+",
+              "D": 2,
+              "Special_Rules": [
+                "MW2"
+              ]
+            },
+            {
+              "name": "Fists",
+              "A": 3,
+              "BS_WS": "3+",
+              "D": 3,
+              "Special_Rules": []
+            }
+          ],
+          "abilities": [
+            "'Av it!",
+            "Da Best Spot"
+          ],
+          "unique_actions": []
+        }
+      },
+      {
+        "Kommando Dakka Boy": {
+          "stats": {
+            "M": 3,
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 10,
+            "Base": "32mm"
+          },
+          "weapons": [
+            {
+              "name": "Dakka shoota",
+              "A": 5,
+              "BS_WS": "4+",
+              "D": 3,
+              "Special_Rules": [
+                "Unload Slugs"
+              ]
+            },
+            {
+              "name": "Fists",
+              "A": 3,
+              "BS_WS": "3+",
+              "D": 3,
+              "Special_Rules": []
+            }
+          ],
+          "abilities": [
+            "Dakka Dash"
+          ],
+          "unique_actions": []
+        }
+      },
+      {
+        "Kommando Comms Boy": {
+          "stats": {
+            "M": 3,
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 10,
+            "Base": "32mm"
+          },
+          "weapons": [
+            {
+              "name": "Shokka pistol",
+              "A": 6,
+              "BS_WS": "4+",
+              "D": 1,
+              "Special_Rules": [
+                "Stun",
+                "MW2"
+              ]
+            },
+            {
+              "name": "Fists",
+              "A": 3,
+              "BS_WS": "3+",
+              "D": 3,
+              "Special_Rules": []
+            }
+          ],
+          "abilities": [
+            "I Got a Plan, Ladz",
+            "Listen In"
+          ],
+          "unique_actions": []
+        }
+      },
+      {
+        "Kommando Burna Boy": {
+          "stats": {
+            "M": 3,
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 10,
+            "Base": "32mm"
+          },
+          "weapons": [
+            {
+              "name": "Burna",
+              "A": 5,
+              "BS_WS": "2+",
+              "D": 2,
+              "Special_Rules": [
+                "Rng",
+                "Torrent"
+              ]
+            },
+            {
+              "name": "Fists",
+              "A": 3,
+              "BS_WS": "3+",
+              "D": 3,
+              "Special_Rules": []
+            }
+          ],
+          "abilities": [],
+          "unique_actions": []
+        }
+      },
+      {
+        "Kommando Rokkit Boy": {
+          "stats": {
+            "M": 3,
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 10,
+            "Base": "32mm"
+          },
+          "weapons": [
+            {
+              "name": "Rokkit launcha",
+              "A": 5,
+              "BS_WS": "4+",
+              "D": 4,
+              "Special_Rules": [
+                "AP1",
+                "Splash 1"
+              ]
+            },
+            {
+              "name": "Fists",
+              "A": 3,
+              "BS_WS": "3+",
+              "D": 3,
+              "Special_Rules": []
+            }
+          ],
+          "abilities": [
+            "Boom Boy"
+          ],
+          "unique_actions": []
+        }
+      },
+      {
+        "Kommando Grot": {
+          "stats": {
+            "M": 3,
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 5,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Grot choppa",
+              "A": 3,
+              "BS_WS": "5+",
+              "D": 1,
+              "Special_Rules": []
+            }
+          ],
+          "abilities": [
+            "Sneaky Zogger",
+            "Grappling Hook"
+          ],
+          "unique_actions": []
+        }
+      },
+      {
+        "Kommando Nob": {
+          "stats": {
+            "M": 3,
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "4+",
+            "W": 13,
+            "Base": "32mm"
+          },
+          "weapons": [
+            {
+              "name": "Slugga",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": 3,
+              "Special_Rules": []
+            },
+            {
+              "name": "Big choppa",
+              "A": 4,
+              "BS_WS": "2+",
+              "D": 5,
+              "Special_Rules": []
+            },
+            {
+              "name": "Power klaw",
+              "A": 4,
+              "BS_WS": "3+",
+              "D": 5,
+              "Special_Rules": [
+                "Brutal"
+              ]
+            }
+          ],
+          "abilities": [
+            "Get it Dun!"
+          ],
+          "unique_actions": []
+        }
+      },
+      {
+        "Bomb Squig": {
+          "stats": {
+            "M": 3,
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "6+",
+            "W": 6,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Dynamite",
+              "A": 4,
+              "BS_WS": "3+",
+              "D": 5,
+              "Special_Rules": [
+                "AP1",
+                "Bomb Squig"
+              ]
+            },
+            {
+              "name": "Vicious bite",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": 4,
+              "Special_Rules": []
+            }
+          ],
+          "abilities": [],
+          "unique_actions": [
+            "BOOM!",
+            "Stoopid"
+          ]
+        }
+      }
+    ]
+  },
+  "Otra faccion": {
+    "Troops": [
+      {
+        "Kommando Boya": {
+          "stats": {
+            "M": 3,
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 10,
+            "Base": "32mm"
+          },
+          "weapons": [
+            {
+              "name": "Slugga",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": 3,
+              "Special_Rules": [
+                "Just A Scratch"
+              ]
+            },
+            {
+              "name": "Choppa",
+              "A": 4,
+              "BS_WS": "3+",
+              "D": 4,
+              "Special_Rules": [
+                "Sneaky Git"
+              ]
+            }
+          ],
+          "abilities": [],
+          "unique_actions": []
+        }
+      }
+    ]
+  }
+}
