@@ -18,7 +18,7 @@
               "A": 4,
               "BS_WS": "4+",
               "D": 3,
-              "Special_Rules": [
+              "Effects": [
                 "Just A Scratch"
               ]
             },
@@ -27,7 +27,7 @@
               "A": 4,
               "BS_WS": "3+",
               "D": 4,
-              "Special_Rules": [
+              "Effects": [
                 "Sneaky Git"
               ]
             }
@@ -53,7 +53,7 @@
               "A": 4,
               "BS_WS": "3+",
               "D": 2,
-              "Special_Rules": [
+              "Effects": [
                 "Rng",
                 "Silent"
               ]
@@ -63,7 +63,7 @@
               "A": 4,
               "BS_WS": "3+",
               "D": 4,
-              "Special_Rules": [
+              "Effects": [
                 "Relentless"
               ]
             }
@@ -92,7 +92,7 @@
               "A": 4,
               "BS_WS": "4+",
               "D": 3,
-              "Special_Rules": [
+              "Effects": [
                 "Just A Scratch"
               ]
             },
@@ -101,7 +101,7 @@
               "A": 3,
               "BS_WS": "3+",
               "D": 5,
-              "Special_Rules": [
+              "Effects": [
                 "Brutal"
               ]
             }
@@ -130,7 +130,7 @@
               "A": 6,
               "BS_WS": "3+",
               "D": 2,
-              "Special_Rules": [
+              "Effects": [
                 "MW2"
               ]
             },
@@ -139,7 +139,7 @@
               "A": 3,
               "BS_WS": "3+",
               "D": 3,
-              "Special_Rules": []
+              "Effects": []
             }
           ],
           "abilities": [
@@ -166,7 +166,7 @@
               "A": 5,
               "BS_WS": "4+",
               "D": 3,
-              "Special_Rules": [
+              "Effects": [
                 "Unload Slugs"
               ]
             },
@@ -175,7 +175,7 @@
               "A": 3,
               "BS_WS": "3+",
               "D": 3,
-              "Special_Rules": []
+              "Effects": []
             }
           ],
           "abilities": [
@@ -201,7 +201,7 @@
               "A": 6,
               "BS_WS": "4+",
               "D": 1,
-              "Special_Rules": [
+              "Effects": [
                 "Stun",
                 "MW2"
               ]
@@ -211,7 +211,7 @@
               "A": 3,
               "BS_WS": "3+",
               "D": 3,
-              "Special_Rules": []
+              "Effects": []
             }
           ],
           "abilities": [
@@ -238,7 +238,7 @@
               "A": 5,
               "BS_WS": "2+",
               "D": 2,
-              "Special_Rules": [
+              "Effects": [
                 "Rng",
                 "Torrent"
               ]
@@ -248,7 +248,7 @@
               "A": 3,
               "BS_WS": "3+",
               "D": 3,
-              "Special_Rules": []
+              "Effects": []
             }
           ],
           "abilities": [],
@@ -272,7 +272,7 @@
               "A": 5,
               "BS_WS": "4+",
               "D": 4,
-              "Special_Rules": [
+              "Effects": [
                 "AP1",
                 "Splash 1"
               ]
@@ -282,7 +282,7 @@
               "A": 3,
               "BS_WS": "3+",
               "D": 3,
-              "Special_Rules": []
+              "Effects": []
             }
           ],
           "abilities": [
@@ -308,7 +308,7 @@
               "A": 3,
               "BS_WS": "5+",
               "D": 1,
-              "Special_Rules": []
+              "Effects": []
             }
           ],
           "abilities": [
@@ -335,21 +335,21 @@
               "A": 4,
               "BS_WS": "4+",
               "D": 3,
-              "Special_Rules": []
+              "Effects": []
             },
             {
               "name": "Big choppa",
               "A": 4,
               "BS_WS": "2+",
               "D": 5,
-              "Special_Rules": []
+              "Effects": []
             },
             {
               "name": "Power klaw",
               "A": 4,
               "BS_WS": "3+",
               "D": 5,
-              "Special_Rules": [
+              "Effects": [
                 "Brutal"
               ]
             }
@@ -377,7 +377,7 @@
               "A": 4,
               "BS_WS": "3+",
               "D": 5,
-              "Special_Rules": [
+              "Effects": [
                 "AP1",
                 "Bomb Squig"
               ]
@@ -387,7 +387,7 @@
               "A": 3,
               "BS_WS": "4+",
               "D": 4,
-              "Special_Rules": []
+              "Effects": []
             }
           ],
           "abilities": [],
@@ -418,7 +418,7 @@
               "A": 4,
               "BS_WS": "4+",
               "D": 3,
-              "Special_Rules": [
+              "Effects": [
                 "Just A Scratch"
               ]
             },
@@ -427,7 +427,7 @@
               "A": 4,
               "BS_WS": "3+",
               "D": 4,
-              "Special_Rules": [
+              "Effects": [
                 "Sneaky Git"
               ]
             }

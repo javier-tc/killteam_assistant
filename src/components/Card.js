@@ -34,6 +34,7 @@ function TroopsCard({content}) {
         border: 2,
         borderRadius: 0,
         color: '#C3510A',
+        backgroundColor: '#1E1E1E',
       }}>
       <CardContent>
         {content}

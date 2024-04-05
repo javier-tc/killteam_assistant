@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
-function AccordionExpandDefault({factionName, }) {
+function AccordionExpandDefault({name, details}) {
     return (
         <div>
             <Accordion>
@@ -14,13 +14,20 @@ function AccordionExpandDefault({factionName, }) {
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel2-content"
                     id="panel2-header"
+                    sx={{
+                        margin: 0,
+                        border: 0,
+                        borderRadius: 1,
+                        color: '#1E1E1E',
+                        backgroundColor: '#fff',
+                        padding: 2
+                    } }
                 >
-                    <Typography>{factionName}</Typography>
+                    <Typography>{name}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        malesuada lacus ex, sit amet blandit leo lobortis eget.
+                        {details}
                     </Typography>
                 </AccordionDetails>
             </Accordion>

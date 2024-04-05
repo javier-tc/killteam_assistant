@@ -58,28 +58,30 @@ function App() {
 
   const renderFactionSelectors = () => {
     return factionNames.map((factionName, index) => (
-      <div key={factionName}>
-      <AccordionExpandDefault 
-        factionName={factionName}
-        />
-        {factions[factionName].Troops.map((troopData) => {
-          const troopName = Object.keys(troopData)[0];
-          const stats = troopData[troopName].stats;
-          const abilities = troopData[troopName].abilities;
-          const weapons = troopData[troopName].weapons;
-          const unique_actions = troopData[troopName].unique_actions;
-          //console.log(troopData[troopName]);
+      <div key={factionName} style={{marginBottom: '5px'}}>
+        <AccordionExpandDefault
+          name={factionName}
 
-          return (
-            <div key={troopName}>
-              {troopName}
-              <TroopButton 
-                increase={() => toggleTroop(factionName, troopName, stats, abilities, weapons, unique_actions, 'increase')}
-                decrease={() => toggleTroop(factionName, troopName, stats, abilities, weapons, unique_actions, 'decrease')}
+          details={factions[factionName].Troops.map((troopData) => {
+            const troopName = Object.keys(troopData)[0];
+            const stats = troopData[troopName].stats;
+            const abilities = troopData[troopName].abilities;
+            const weapons = troopData[troopName].weapons;
+            const unique_actions = troopData[troopName].unique_actions;
+            //console.log(troopData[troopName]);
+
+            return (
+              <div key={troopName} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '3px' }}>
+                <div style={{ marginRight: 'auto' }}>{troopName}</div>
+                <TroopButton
+                  increase={() => toggleTroop(factionName, troopName, stats, abilities, weapons, unique_actions, 'increase')}
+                  decrease={() => toggleTroop(factionName, troopName, stats, abilities, weapons, unique_actions, 'decrease')}
                 />
-            </div>
-          );
-        })}
+              </div>
+            );
+          })}
+
+        />
       </div>
     ));
   };
@@ -102,36 +104,40 @@ function App() {
     return selectedTroops.map((troop) => (
       <TroopsCard
         content={
-          <div key={troop.id}>
-            <h3>{troop.name}</h3>
-            <ul>
-              {StatsTable(troop.stats, wRender(troop))}
-            </ul>
-            {troop.abilities.length === 0 ? null :
-              <div>
-                <strong>Abilities:</strong>
+          <AccordionExpandDefault
+            name={troop.w === '0' ? troop.name + ' (Muerto)' : troop.name + ' (Heridas restantes: ' + troop.w + ')'}
+            details={
+              <div key={troop.id}>
                 <ul>
-                  {troop.abilities.map((ability, index) => (
-                    <li key={index}>{ability}</li>
-                  ))}
+                  {StatsTable(troop.stats, wRender(troop))}
                 </ul>
-              </div>}
-            <div>
-              <strong>Weapons:</strong>
-              <ul>
-                {WeaponTable(troop.weapons)}
-              </ul>
-            </div>
-            {troop.unique_actions.length === 0 ? null :
-              <div>
-                <strong>Unique Actions:</strong>
-                <ul>
-                  {troop.unique_actions.map((action, index) => (
-                    <li key={index}>{action}</li>
-                  ))}
-                </ul>
-              </div>}
-          </div>
+                {troop.abilities.length === 0 ? null :
+                  <div>
+                    <strong>Abilities:</strong>
+                    <ul>
+                      {troop.abilities.map((ability, index) => (
+                        <li key={index}>{ability}</li>
+                      ))}
+                    </ul>
+                  </div>}
+                <div>
+                  <strong>Weapons:</strong>
+                  <ul>
+                    {WeaponTable(troop.weapons)}
+                  </ul>
+                </div>
+                {troop.unique_actions.length === 0 ? null :
+                  <div>
+                    <strong>Unique Actions:</strong>
+                    <ul>
+                      {troop.unique_actions.map((action, index) => (
+                        <li key={index}>{action}</li>
+                      ))}
+                    </ul>
+                  </div>}
+              </div>
+            }
+          />
         }
       />
     ));

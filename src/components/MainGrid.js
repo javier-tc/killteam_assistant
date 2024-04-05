@@ -15,14 +15,14 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function AutoGrid({left, middle, right}) {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2}>
-        <Grid item xs>
+      <Grid container spacing={1}>
+        <Grid item xs = {3}>
           <Item>{left}</Item>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={7}>
           <Item>{middle}</Item>
         </Grid>
-        <Grid item xs = {4}>
+        <Grid item xs = {2}>
           <Item>{right}</Item>
         </Grid>
       </Grid>

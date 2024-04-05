@@ -54,7 +54,8 @@ function WeaponTable(rows) {
                         <TableCell align="right">A</TableCell>
                         <TableCell align="right">BS WS</TableCell>
                         <TableCell align="right">D</TableCell>
-                        <TableCell align="right">Reglas especiales</TableCell>
+                        <TableCell align="right">Reglas Especiales</TableCell>
+                        <TableCell align="right">!</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -69,7 +70,8 @@ function WeaponTable(rows) {
                             <TableCell align="right">{row.A}</TableCell>
                             <TableCell align="right">{row.BS_WS}</TableCell>
                             <TableCell align="right">{row.D}</TableCell>
-                            <TableCell align="right">{row.Special_Rules}</TableCell>
+                            <TableCell align="right">{/*row.Special_Rules*/}</TableCell>
+                            <TableCell align="right">{row.Effects.join(', ')}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
