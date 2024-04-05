@@ -4,24 +4,43 @@ import CardContent from '@mui/material/CardContent';
 
 
 
-export default function BasicCard({ content }) {
+function BasicCard({ content, minHeight }) {
   return (
-    <Card 
-        sx={{ 
-            minWidth: 275, 
-            width: 'auto',
-            minHeight: 800,
-            margin: 1,
-            bgcolor: '#1E1E1E',
-            border: 2,
-            borderRadius:0,
-            color: '#C3510A',
-            }}>
+    <Card
+      sx={{
+        minWidth: 275,
+        width: 'auto',
+        minHeight: minHeight || 800,
+        margin: 1,
+        bgcolor: '#1E1E1E',
+        border: 2,
+        borderRadius: 0,
+        color: '#C3510A',
+      }}>
       <CardContent>
         {content}
       </CardContent>
-      {/* <CardActions>
-      </CardActions> */}
     </Card>
   );
 }
+
+function TroopsCard({content}) {
+  return (
+    <Card
+      sx={{
+        minWidth: 275 ,
+        width: 'auto',
+        margin: 1,
+        border: 2,
+        borderRadius: 0,
+        color: '#C3510A',
+      }}>
+      <CardContent>
+        {content}
+      </CardContent>
+    </Card>
+  )
+}
+
+
+export { BasicCard, TroopsCard }

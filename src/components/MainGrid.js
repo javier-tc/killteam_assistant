@@ -8,21 +8,21 @@ const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
   padding: theme.spacing(1),
-  textAlign: 'center',
+  textAlign: 'left',
   color: theme.palette.text.secondary,
 }));
 
 export default function AutoGrid({left, middle, right}) {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid container spacing={3}>
+      <Grid container spacing={2}>
         <Grid item xs>
           <Item>{left}</Item>
         </Grid>
         <Grid item xs={6}>
           <Item>{middle}</Item>
         </Grid>
-        <Grid item xs>
+        <Grid item xs = {4}>
           <Item>{right}</Item>
         </Grid>
       </Grid>
