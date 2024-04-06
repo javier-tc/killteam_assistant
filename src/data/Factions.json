@@ -3,8 +3,9 @@
     "Troops": [
       {
         "Kommando Boy": {
+          "image": "images/ork_kommandos/kommando_boy.jpg",
           "stats": {
-            "M": 3,
+            "M": "3 ●[2]",
             "APL": 2,
             "GA": 1,
             "DF": 3,
@@ -17,29 +18,33 @@
               "name": "Slugga",
               "A": 4,
               "BS_WS": "4+",
-              "D": 3,
-              "Effects": [
-                "Just A Scratch"
-              ]
+              "D": "3/4",
+              "Special_Rules": [
+                "Rng ⬟[6]"
+              ],
+              "Effects": []
             },
             {
               "name": "Choppa",
               "A": 4,
               "BS_WS": "3+",
-              "D": 4,
-              "Effects": [
-                "Sneaky Git"
-              ]
+              "D": "4/5",
+              "Special_Rules": [],
+              "Effects": []
             }
           ],
           "abilities": [],
-          "unique_actions": []
+          "unique_actions": [],
+          "datacard_related": [
+            "JUST A SCRATCH",
+            "SNEAKY GIT"
+          ]
         }
       },
       {
         "Kommando Slasha Boy": {
           "stats": {
-            "M": 3,
+            "M": "3 ●[2]",
             "APL": 2,
             "GA": 1,
             "DF": 3,
@@ -52,33 +57,39 @@
               "name": "Throwing knives",
               "A": 4,
               "BS_WS": "3+",
-              "D": 2,
-              "Effects": [
-                "Rng",
+              "D": "2/5",
+              "Special_Rules": [
+                "Rng ⬟[6]",
                 "Silent"
-              ]
+              ],
+              "Effects": []
             },
             {
               "name": "Twin choppas",
               "A": 4,
               "BS_WS": "3+",
-              "D": 4,
-              "Effects": [
+              "D": "4/5",
+              "Special_Rules": [
                 "Relentless"
-              ]
+              ],
+              "Effects": []
             }
           ],
           "abilities": [
             "Dat All You Got?",
             "Breach"
           ],
-          "unique_actions": []
+          "unique_actions": [],
+          "datacard_related": [
+            "JUST A SCRATCH",
+            "SNEAKY GIT"
+          ]
         }
       },
       {
         "Kommando Breacha Boy": {
           "stats": {
-            "M": 3,
+            "M": "3 ●[2]",
             "APL": 2,
             "GA": 1,
             "DF": 3,
@@ -91,32 +102,38 @@
               "name": "Slugga",
               "A": 4,
               "BS_WS": "4+",
-              "D": 3,
-              "Effects": [
-                "Just A Scratch"
-              ]
+              "D": "3/4",
+              "Special_Rules": [
+                "Rng ⬟[6]"
+              ],
+              "Effects": []
             },
             {
               "name": "Breacha ram",
               "A": 3,
               "BS_WS": "3+",
-              "D": 5,
-              "Effects": [
+              "D": "5/5",
+              "Special_Rules": [
                 "Brutal"
-              ]
+              ],
+              "Effects": []
             }
           ],
           "abilities": [
             "Bull Charge",
             "Breach"
           ],
-          "unique_actions": []
+          "unique_actions": [],
+          "datacard_related": [
+            "JUST A SCRATCH",
+            "SNEAKY GIT"
+          ]
         }
       },
       {
         "Kommando Snipa Boy": {
           "stats": {
-            "M": 3,
+            "M": "3 ●[2]",
             "APL": 2,
             "GA": 1,
             "DF": 3,
@@ -129,7 +146,8 @@
               "name": "Scoped big shoota",
               "A": 6,
               "BS_WS": "3+",
-              "D": 2,
+              "D": "2/2",
+              "Special_Rules": [],
               "Effects": [
                 "MW2"
               ]
@@ -138,21 +156,26 @@
               "name": "Fists",
               "A": 3,
               "BS_WS": "3+",
-              "D": 3,
+              "D": "3/4",
+              "Special_Rules": [],
               "Effects": []
             }
           ],
-          "abilities": [
-            "'Av it!",
-            "Da Best Spot"
+          "abilities": [],
+          "unique_actions": [
+            "'Av it! (2AP)",
+            "Da Best Spot (2AP)"
           ],
-          "unique_actions": []
+          "datacard_related": [
+            "JUST A SCRATCH",
+            "SNEAKY GIT"
+          ]
         }
       },
       {
         "Kommando Dakka Boy": {
           "stats": {
-            "M": 3,
+            "M": "3 ●[2]",
             "APL": 2,
             "GA": 1,
             "DF": 3,
@@ -165,29 +188,37 @@
               "name": "Dakka shoota",
               "A": 5,
               "BS_WS": "4+",
-              "D": 3,
-              "Effects": [
+              "D": "3/4",
+              "Special_Rules": [
                 "Unload Slugs"
-              ]
+              ],
+              "Effects": []
             },
             {
               "name": "Fists",
               "A": 3,
               "BS_WS": "3+",
-              "D": 3,
+              "D": "3/4",
+              "Special_Rules": [],
               "Effects": []
             }
           ],
           "abilities": [
-            "Dakka Dash"
+            "Unload Slugs"
           ],
-          "unique_actions": []
+          "unique_actions": [
+            "Dakka Dash (1AP)"
+          ],
+          "datacard_related": [
+            "JUST A SCRATCH",
+            "SNEAKY GIT"
+          ]
         }
       },
       {
         "Kommando Comms Boy": {
           "stats": {
-            "M": 3,
+            "M": "3 ●[2]",
             "APL": 2,
             "GA": 1,
             "DF": 3,
@@ -200,7 +231,10 @@
               "name": "Shokka pistol",
               "A": 6,
               "BS_WS": "4+",
-              "D": 1,
+              "D": "1/1",
+              "Special_Rules": [
+                "Rng ⬟[6]"
+              ],
               "Effects": [
                 "Stun",
                 "MW2"
@@ -210,21 +244,27 @@
               "name": "Fists",
               "A": 3,
               "BS_WS": "3+",
-              "D": 3,
+              "D": "3/4",
+              "Special_Rules": [],
               "Effects": []
             }
           ],
           "abilities": [
-            "I Got a Plan, Ladz",
-            "Listen In"
+            "I Got a Plan, Ladz"
           ],
-          "unique_actions": []
+          "unique_actions": [
+            "Listen In (1AP)"
+          ],
+          "datacard_related": [
+            "JUST A SCRATCH",
+            "SNEAKY GIT"
+          ]
         }
       },
       {
         "Kommando Burna Boy": {
           "stats": {
-            "M": 3,
+            "M": "3 ●[2]",
             "APL": 2,
             "GA": 1,
             "DF": 3,
@@ -237,28 +277,34 @@
               "name": "Burna",
               "A": 5,
               "BS_WS": "2+",
-              "D": 2,
-              "Effects": [
-                "Rng",
-                "Torrent"
-              ]
+              "D": "2/2",
+              "Special_Rules": [
+                "Rng ⬟[6]",
+                "Torrent ⬤[2]"
+              ],
+              "Effects": []
             },
             {
               "name": "Fists",
               "A": 3,
               "BS_WS": "3+",
-              "D": 3,
+              "D": "3/4",
+              "Special_Rules": [],
               "Effects": []
             }
           ],
           "abilities": [],
-          "unique_actions": []
+          "unique_actions": [],
+          "datacard_related": [
+            "JUST A SCRATCH",
+            "SNEAKY GIT"
+          ]
         }
       },
       {
         "Kommando Rokkit Boy": {
           "stats": {
-            "M": 3,
+            "M": "3 ●[2]",
             "APL": 2,
             "GA": 1,
             "DF": 3,
@@ -271,9 +317,11 @@
               "name": "Rokkit launcha",
               "A": 5,
               "BS_WS": "4+",
-              "D": 4,
+              "D": "4/5",
+              "Special_Rules": [
+                "AP1"
+              ],
               "Effects": [
-                "AP1",
                 "Splash 1"
               ]
             },
@@ -281,20 +329,25 @@
               "name": "Fists",
               "A": 3,
               "BS_WS": "3+",
-              "D": 3,
+              "D": "3/4",
+              "Special_Rules": [],
               "Effects": []
             }
           ],
           "abilities": [
             "Boom Boy"
           ],
-          "unique_actions": []
+          "unique_actions": [],
+          "datacard_related": [
+            "JUST A SCRATCH",
+            "SNEAKY GIT"
+          ]
         }
       },
       {
         "Kommando Grot": {
           "stats": {
-            "M": 3,
+            "M": "3 ●[2]",
             "APL": 2,
             "GA": 1,
             "DF": 3,
@@ -307,21 +360,26 @@
               "name": "Grot choppa",
               "A": 3,
               "BS_WS": "5+",
-              "D": 1,
+              "D": "1/4",
+              "Special_Rules": [],
               "Effects": []
             }
           ],
           "abilities": [
-            "Sneaky Zogger",
-            "Grappling Hook"
+            "Sneaky Zogger"
           ],
-          "unique_actions": []
+          "unique_actions": [
+            "Grappling Hook (1AP)"
+          ],
+          "datacard_related": [
+            "SNEAKY GIT"
+          ]
         }
       },
       {
         "Kommando Nob": {
           "stats": {
-            "M": 3,
+            "M": "3 ●[2]",
             "APL": 2,
             "GA": 1,
             "DF": 3,
@@ -334,36 +392,45 @@
               "name": "Slugga",
               "A": 4,
               "BS_WS": "4+",
-              "D": 3,
+              "D": "3/4",
+              "Special_Rules": [
+                "Rng ⬟[6]"
+              ],
               "Effects": []
             },
             {
               "name": "Big choppa",
               "A": 4,
               "BS_WS": "2+",
-              "D": 5,
+              "D": "5/6",
+              "Special_Rules": [],
               "Effects": []
             },
             {
               "name": "Power klaw",
               "A": 4,
               "BS_WS": "3+",
-              "D": 5,
-              "Effects": [
+              "D": "5/7",
+              "Special_Rules": [
                 "Brutal"
-              ]
+              ],
+              "Effects": []
             }
           ],
           "abilities": [
             "Get it Dun!"
           ],
-          "unique_actions": []
+          "unique_actions": [],
+          "datacard_related": [
+            "JUST A SCRATCH",
+            "SNEAKY GIT"
+          ]
         }
       },
       {
         "Bomb Squig": {
           "stats": {
-            "M": 3,
+            "M": "3 ●[2]",
             "APL": 2,
             "GA": 1,
             "DF": 3,
@@ -376,64 +443,85 @@
               "name": "Dynamite",
               "A": 4,
               "BS_WS": "3+",
-              "D": 5,
-              "Effects": [
+              "D": "5/6",
+              "Special_Rules": [
                 "AP1",
                 "Bomb Squig"
+              ],
+              "Effects": [
+                "P2"
               ]
             },
             {
               "name": "Vicious bite",
               "A": 3,
               "BS_WS": "4+",
-              "D": 4,
+              "D": "4/5",
+              "Special_Rules": [],
               "Effects": []
             }
           ],
-          "abilities": [],
-          "unique_actions": [
+          "abilities": [
+            "Bomb Squig",
+            "THE BALANCE DATASLATE",
             "BOOM!",
             "Stoopid"
+          ],
+          "unique_actions": [],
+          "datacard_related": [
+            "JUST A SCRATCH"
           ]
         }
       }
-    ]
-  },
-  "Otra faccion": {
-    "Troops": [
+    ],
+    "Abilities": [
       {
-        "Kommando Boya": {
-          "stats": {
-            "M": 3,
-            "APL": 2,
-            "GA": 1,
-            "DF": 3,
-            "SV": "5+",
-            "W": 10,
-            "Base": "32mm"
-          },
-          "weapons": [
-            {
-              "name": "Slugga",
-              "A": 4,
-              "BS_WS": "4+",
-              "D": 3,
-              "Effects": [
-                "Just A Scratch"
-              ]
-            },
-            {
-              "name": "Choppa",
-              "A": 4,
-              "BS_WS": "3+",
-              "D": 4,
-              "Effects": [
-                "Sneaky Git"
-              ]
-            }
-          ],
-          "abilities": [],
-          "unique_actions": []
+        "THROAT SLITTAS": "This operative (excluding BOMB SQUIG operatives) can perform a Charge action while it has a Conceal order."
+      }
+    ],
+    "Strategic_Ploys": [
+      {
+        "SSSSHHHH!": {
+          "cost": "1CP",
+          "description": "Friendly KOMMANDO operatives that are not within Line of Sight of enemy operatives, or have a Conceal order and are more than ⬟[6] from enemy operatives, can immediately perform a free Dash action. You can only use this Strategic Ploy once."
+        }
+      },
+      {
+        "DAKKA! DAKKA! DAKKA!": {
+          "cost": "1CP",
+          "description": "Until the end of the Turning Point, each time a friendly KOMMANDO operative makes a shooting attack, in the Roll Attack Dice step of that shooting attack, if you retain any critical hits, you can select one of your failed hits to be retained as a successful normal hit."
+        }
+      },
+      {
+        "WAAAGH!": {
+          "cost": "1CP",
+          "description": "Until the end of the Turning Point, each time a friendly KOMMANDO operative fights in combat, in the Roll Attack Dice step of that combat, when you would retain two or more normal hits, you can select one of those hits to be retained as a critical hit instead."
+        }
+      },
+      {
+        "SKULK ABOUT": {
+          "cost":"1CP",
+          "description":"Until the end of the Turning Point, each time a shooting attack is made against a friendly KOMMANDO operative, before rolling defence dice for that shooting attack, if it has a Conceal order, you can retain one as a successful normal save without rolling it, regardless of any rules that treat the operative as having an Engage order (e.g. Vantage Point)."
+      }
+    }
+    ],
+    "Tactical_Ploys": [
+      {
+        "JUST A SCRATCH": {
+          "cost": "1CP",
+          "description": "Use this Tactical Ploy in the Resolve Successful Hits step of a shooting attack or combat, when damage would be inflicted on a friendly KOMMANDO operative (excluding BOMB SQUIG operatives) from a normal hit. Ignore the damage inflicted from that attack dice."
+        }
+      },
+      {
+        "KRUMP 'EM": {
+          "cost": "1CP",
+          "description": "Use this Tactical Ploy at the end of the Firefight phase. Select one friendly KOMMANDO operative. It can perform a free Fight action."
+        }
+      },
+      {
+        "SNEAKY GIT": {
+          "cost": "1CP",
+          "description": "Use this Tactical Ploy in the Set Up Operatives step of the mission sequence. Select one friendly KOMMANDO operative (excluding BOMB SQUIG operatives). That operative can be set up with a Conceal order anywhere on the battlefield that is within ▲[1] of Heavy terrain and more than ⬟[6] from enemy operatives and the enemy drop zone. You can only use it once per battle, and that operative cannot have its order changed in the first Turning Point (i.e. from the Infiltrate scouting option)."
         }
       }
     ]

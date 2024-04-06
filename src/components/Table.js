@@ -14,12 +14,12 @@ function StatsTable(rows, w) {
                 <TableHead>
                     <TableRow>
                         <TableCell>M</TableCell>
-                        <TableCell align="right">APL</TableCell>
-                        <TableCell align="right">GA</TableCell>
-                        <TableCell align="right">DF</TableCell>
-                        <TableCell align="right">SV</TableCell>
-                        <TableCell align="right">W</TableCell>
-                        <TableCell align="right">Base</TableCell>
+                        <TableCell align="center">APL</TableCell>
+                        <TableCell align="center">GA</TableCell>
+                        <TableCell align="center">DF</TableCell>
+                        <TableCell align="center">SV</TableCell>
+                        <TableCell align="center">W</TableCell>
+                        <TableCell align="center">Base</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -30,12 +30,12 @@ function StatsTable(rows, w) {
                             <TableCell component="th" scope="row">
                                 {rows.M}
                             </TableCell>
-                            <TableCell align="right">{rows.APL}</TableCell>
-                            <TableCell align="right">{rows.GA}</TableCell>
-                            <TableCell align="right">{rows.DF}</TableCell>
-                            <TableCell align="right">{rows.SV}</TableCell>
-                            <TableCell align="right">{w}</TableCell>
-                            <TableCell align="right">{rows.Base}</TableCell>
+                            <TableCell align="center">{rows.APL}</TableCell>
+                            <TableCell align="center">{rows.GA}</TableCell>
+                            <TableCell align="center">{rows.DF}</TableCell>
+                            <TableCell align="center">{rows.SV}</TableCell>
+                            <TableCell align="center">{w}</TableCell>
+                            <TableCell align="center">{rows.Base}</TableCell>
                         </TableRow>
 
                 </TableBody>
@@ -51,11 +51,11 @@ function WeaponTable(rows) {
                 <TableHead>
                     <TableRow>
                         <TableCell>Nombre</TableCell>
-                        <TableCell align="right">A</TableCell>
-                        <TableCell align="right">BS WS</TableCell>
-                        <TableCell align="right">D</TableCell>
-                        <TableCell align="right">Reglas Especiales</TableCell>
-                        <TableCell align="right">!</TableCell>
+                        <TableCell align="center">A</TableCell>
+                        <TableCell align="center">BS WS</TableCell>
+                        <TableCell align="center">D</TableCell>
+                        <TableCell align="center">Reglas Especiales</TableCell>
+                        <TableCell align="center">!</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -67,11 +67,11 @@ function WeaponTable(rows) {
                             <TableCell component="th" scope="row">
                                 {row.name}
                             </TableCell>
-                            <TableCell align="right">{row.A}</TableCell>
-                            <TableCell align="right">{row.BS_WS}</TableCell>
-                            <TableCell align="right">{row.D}</TableCell>
-                            <TableCell align="right">{/*row.Special_Rules*/}</TableCell>
-                            <TableCell align="right">{row.Effects.join(', ')}</TableCell>
+                            <TableCell align="center">{row.A}</TableCell>
+                            <TableCell align="center">{row.BS_WS}</TableCell>
+                            <TableCell align="center">{row.D}</TableCell>
+                            <TableCell align="center">{row.Special_Rules.length > 0 ? row.Special_Rules.join(', ') : '-'}</TableCell>
+                            <TableCell align="center">{row.Effects.length > 0 ? row.Effects.join(', ') : '-'}</TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

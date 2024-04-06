@@ -5,27 +5,36 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-
-function AccordionExpandDefault({name, details}) {
+function AccordionExpandDefault({ name, details }) {
     return (
         <div>
-            <Accordion>
+            <Accordion
+                sx={{ width: 'auto' }}
+            >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel2-content"
                     id="panel2-header"
                     sx={{
-                        margin: 0,
-                        border: 0,
-                        borderRadius: 1,
+                        border: 1,
+                        borderRadius: 0,
                         color: '#1E1E1E',
                         backgroundColor: '#fff',
-                        padding: 2
-                    } }
+                        paddingHorizontal: 1,
+
+                    }}
                 >
-                    <Typography>{name}</Typography>
+                    <Typography sx={{ fontWeight: 'bold' }}>{name}</Typography>
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails
+                    sx={{
+                        border: 1,
+                        borderRadius: 0,
+                        color: '#1E1E1E',
+                        backgroundColor: '#E8E8E8',
+                        padding: 3,
+                    }}
+                >
                     <Typography>
                         {details}
                     </Typography>
