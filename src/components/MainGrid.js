@@ -19,10 +19,10 @@ export default function AutoGrid({left, middle, right}) {
         <Grid item xs = {4}>
           <Item>{left}</Item>
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={5}>
           <Item>{middle}</Item>
         </Grid>
-        <Grid item xs = {1}>
+        <Grid item xs = {3}>
           <Item>{right}</Item>
         </Grid>
       </Grid>

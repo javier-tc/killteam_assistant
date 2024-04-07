@@ -1,12 +1,12 @@
 import * as React from 'react';
 import Tabs from '@mui/material/Tabs';
-import TabContext from '@material-ui/lab/TabContext';
-import TabPanel from '@material-ui/lab/TabPanel';
+import TabContext from '@mui/lab/TabContext';
+import TabPanel from '@mui/lab/TabPanel';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 
-function ScrollableTabsButtonForce({array}) {
-    const [value, setValue] = React.useState('1');
+function AbilitiesTabs({ array }) {
+    const [value, setValue] = React.useState('0');
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -14,33 +14,54 @@ function ScrollableTabsButtonForce({array}) {
 
     return (
         <TabContext value={value}>
-        {Object.values(array).map((key) => (
-            console.log(Object.keys(key))
-        ))}
-            <Box sx={{ maxWidth: { xs: 320, sm: 480 }, bgcolor: 'background.paper' }}>
+            <Box sx={{ maxWidth: '100%', bgcolor: 'background.paper' }}>
                 <Tabs
                     value={value}
                     onChange={handleChange}
-                    variant="scrollable"
+                    allowScrollButtonsMobile
+                    centered
+                    aria-label="scrollable force tabs example"
+                >
+                    {array.map((item, index) => (
+                        <Tab label={Object.keys(item)[0]} value={index.toString()} key={index} />
+                    ))}
+                </Tabs>
+            </Box>
+            {array.map((item, index) => (
+                <TabPanel value={index.toString()} key={index}>{Object.values(item)[0]}</TabPanel>
+            ))}
+
+        </TabContext>
+    );
+}
+
+function PloysTabs({ array }) {
+    const [value, setValue] = React.useState('0');
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
+
+    return (
+        <TabContext value={value}>
+            <Box sx={{ maxWidth: '100%', bgcolor: 'background.paper' }}>
+                <Tabs
+                    value={value}
+                    onChange={handleChange}
+                    variant='scrollable'
                     scrollButtons
                     allowScrollButtonsMobile
                     aria-label="scrollable force tabs example"
                 >
-                    <Tab label="Item One" value={"1"}/>
-                    <Tab label="Item Two" />
-                    <Tab label="Item Three" />
-                    <Tab label="Item Four" />
-                    <Tab label="Item Five" />
-                    <Tab label="Item Six" />
-                    <Tab label="Item Seven" />
+                    {array.map((item, index) => (
+                        <Tab label={Object.keys(item)[0] + ' [' + Object.values(item)[0].cost + ']'} value={index.toString()} key={index} />
+                    ))}
                 </Tabs>
             </Box>
-            <TabPanel value="1">Item One</TabPanel>
-            <TabPanel value="2">Item Two</TabPanel>
-            <TabPanel value="3">Item Three</TabPanel>
+            {array.map((item, index) => (
+                <TabPanel value={index.toString()} key={index}>{Object.values(item)[0].description}</TabPanel>
+            ))}
         </TabContext>
-
     );
 }
 
-export { ScrollableTabsButtonForce };
+export { AbilitiesTabs, PloysTabs };

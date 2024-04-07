@@ -8,7 +8,7 @@ import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import { StatsTable, WeaponTable } from './components/Table';
 import { TroopButton } from './components/Buttons';
 import { AccordionExpandDefault } from './components/Expand';
-import { ScrollableTabsButtonForce } from './components/Tabs';
+import { AbilitiesTabs, PloysTabs } from './components/Tabs';
 import Factions from './data/Factions.json';
 
 const factions = Factions;
@@ -17,8 +17,7 @@ const factionNames = Object.keys(factions);
 function App() {
   const [selectedTroops, setSelectedTroops] = useState([]);
 
-  const toggleTroop = (factionName, troopName, stats, abilities, weapons, unique_actions, datacard_related, image, action) => {
-    if (action === 'increase') {
+  const toggleTroop = (factionName, troopName, stats, abilities, weapons, unique_actions, datacard_related, image) => {
       const troop = {
         id: `${factionName}-${troopName}-${Date.now()}`,
         faction: factionName,
@@ -33,7 +32,6 @@ function App() {
         count: 1,
       };
       setSelectedTroops(prevTroops => [...prevTroops, troop]);
-    }
   };
 
   const deleteTroop = (troopID) => {
@@ -67,28 +65,30 @@ function App() {
           details={
             <>
               {factions[factionName].Abilities.length > 0 ?
-                <div>
-                  <h3> Abilities: </h3>
-                  <ScrollableTabsButtonForce array={factions[factionName].Abilities}/>
-                </div>
+                <AccordionExpandDefault
+                  name = {'Abilities'}
+                  details={<AbilitiesTabs array={factions[factionName].Abilities}/>}
+                />
                 :
                 null}
-              {/* {factions[factionName].Strategic_Ploys.length > 0 ?
-                <div>
-                  <h3> Strategic Ploys: </h3>
-                  <ScrollableTabsButtonForce />
-                </div>
+              {factions[factionName].Strategic_Ploys.length > 0 ?
+                <AccordionExpandDefault
+                  name = {'Strategic Ploys'}
+                  details={<PloysTabs array={factions[factionName].Strategic_Ploys}/>}
+                />
                 :
                 null}
               {factions[factionName].Tactical_Ploys.length > 0 ?
-                <div>
-                  <h3> Tactical Ploys: </h3>
-                  <ScrollableTabsButtonForce />
-                </div>
+                <AccordionExpandDefault
+                  name = {'Tactical Ploys'}
+                  details={<PloysTabs array={factions[factionName].Tactical_Ploys}/>}
+                />
                 :
-                null} */}
-              <h3> Tropas: </h3>
-              {factions[factionName].Troops.map((troopData) => {
+                null}
+                <div style={{ marginTop: '10px' }}>
+              <AccordionExpandDefault
+                name={'Tropas'}
+                details={factions[factionName].Troops.map((troopData) => {
                 const troopName = Object.keys(troopData)[0];
                 const stats = troopData[troopName].stats;
                 const abilities = troopData[troopName].abilities;
@@ -97,14 +97,16 @@ function App() {
                 const datacard_related = troopData[troopName].datacard_related;
                 const image = troopData[troopName].image;
                 return (
-                  <div key={troopName} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '3px' }}>
+                  <div key={troopName} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '5px' }}>
                     <div style={{ marginRight: 'auto' }}>{troopName}</div>
                     <TroopButton
-                      increase={() => toggleTroop(factionName, troopName, stats, abilities, weapons, unique_actions, datacard_related, image, 'increase')}
+                      increase={() => toggleTroop(factionName, troopName, stats, abilities, weapons, unique_actions, datacard_related, image)}
                     />
                   </div>
                 );
               })}
+              />
+              </div>
             </>
           }
         />
@@ -128,7 +130,7 @@ function App() {
   const renderSelectedTroops = () => {
     return selectedTroops.map((troop) => (
       <Grid container spacing={1} columns={16} marginBottom={2}>
-        <Grid item xs={15}>
+        <Grid item xs={14}>
           <AccordionExpandDefault
             name={troop.w === '0' ? troop.name + ' ☠️' : troop.name + ' ❤️: ' + troop.w}
             details={
@@ -175,12 +177,13 @@ function App() {
             }
           />
         </Grid>
-        <Grid item xs={1} marginTop={0.9}>
+        <Grid item xs={2} alignContent={'center'}>
           <Button
             color='error'
-            //variant=''
+            variant='text'
             size='small'
             aria-label="delete"
+            sx={{height: '100%', maxHeight:50}}
             onClick={deleteTroop.bind(this, troop.id)}
           >
             <HighlightOffIcon />
