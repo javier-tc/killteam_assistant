@@ -44,4 +44,27 @@ function AccordionExpandDefault({ name, details }) {
     );
 }
 
-export { AccordionExpandDefault };
+function SimpleAccordionExpand({ name, details }) {
+    return (
+        <div>
+            <Accordion
+                sx={{ width: 'auto' }}
+            >
+                <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel2-content"
+                    id="panel2-header"
+                >
+                    <Typography sx={{ fontWeight: 'bold' }}>{name}</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    <Typography>
+                        {details}
+                    </Typography>
+                </AccordionDetails>
+            </Accordion>
+        </div>
+);
+}
+
+export { AccordionExpandDefault, SimpleAccordionExpand };
