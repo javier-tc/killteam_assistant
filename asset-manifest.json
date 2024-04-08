@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/killteam_assistant/static/css/main.07738f4b.css",
-    "main.js": "/killteam_assistant/static/js/main.e9ec9e2a.js",
+    "main.js": "/killteam_assistant/static/js/main.311bad4f.js",
     "static/js/453.381edac6.chunk.js": "/killteam_assistant/static/js/453.381edac6.chunk.js",
     "index.html": "/killteam_assistant/index.html",
     "main.07738f4b.css.map": "/killteam_assistant/static/css/main.07738f4b.css.map",
-    "main.e9ec9e2a.js.map": "/killteam_assistant/static/js/main.e9ec9e2a.js.map",
+    "main.311bad4f.js.map": "/killteam_assistant/static/js/main.311bad4f.js.map",
     "453.381edac6.chunk.js.map": "/killteam_assistant/static/js/453.381edac6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07738f4b.css",
-    "static/js/main.e9ec9e2a.js"
+    "static/js/main.311bad4f.js"
   ]
 }
