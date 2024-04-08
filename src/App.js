@@ -106,10 +106,10 @@ function App() {
                 :
                 null}
               {factions[factionName].Tactical_Ploys.length > 0 ?
-                  <SimpleAccordionExpand
-                    name={'Tactical Ploys'}
-                    details={<PloysTabs array={factions[factionName].Tactical_Ploys} />}
-                  />
+                <SimpleAccordionExpand
+                  name={'Tactical Ploys'}
+                  details={<PloysTabs array={factions[factionName].Tactical_Ploys} />}
+                />
                 :
                 null}
             </>
@@ -133,6 +133,10 @@ function App() {
   );
 
   const renderSelectedTroops = () => {
+    if (selectedTroops.length === 0) {
+      return <h2>No hay tropas seleccionadas</h2>;
+    }
+  
     return selectedTroops.map((troop) => (
       <Grid container spacing={1} columns={30} marginBottom={2}>
         <Grid item xs={28}>
@@ -190,6 +194,7 @@ function App() {
       </Grid>
     ));
   };
+  
 
   return (
     <div className="App">
@@ -203,7 +208,7 @@ function App() {
                 {renderSelectedTroops()}
               </div>
             }
-             right={RulesRender()}
+            right={RulesRender()}
           />
         }
       />

@@ -13,13 +13,16 @@ function RulesRender() {
         <div>
             {appendix_names.map((name, index) => (
                 <div style={{ marginBottom: '5px' }}>
+                {/* {appendix[name].map((item, index) => (
+                    console.log(Object.values(item)[0].description)
+                ))} */}
                     <SimpleAccordionExpand
                         key={index}
                         name={name}
-                        details={<></>
-                            // <VerticalTabs
-                            //     array={appendix[name]}
-                            // />
+                        details={
+                            <VerticalTabs
+                                array={appendix[name]}
+                            />
                         }
                     />
                 </div>

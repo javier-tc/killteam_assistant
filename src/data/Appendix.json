@@ -171,7 +171,7 @@
         {
             "Torrent x": {
                 "description": "Each time a friendly operative performs a Shoot action or Overwatch action and selects this weapon, after making the shooting attack against the target, it can make a shooting attack with this weapon against each other valid target within x of the original target and each other, x is the distance after the weapon’s Torrent, e.g. Torrent ⬤[2].",
-                "image": "",
+                "image": "images/appendix/torrent_x.jpg",
                 "extra": [
                     "An operative performs a Shoot action, selects a ranged weapon with the Torrent special rule, and selects operative A as the target.",
                     "After making the shooting attack against operative A, it makes a shooting attack against operative B and C, determining if they are a valid target as normal.",

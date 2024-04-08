@@ -89,14 +89,14 @@ function PloysTabs({ array }) {
 //     value: PropTypes.number.isRequired,
 // };
 
-function a11yProps(index) {
+function allyProps(index) {
     return {
         id: `vertical-tab-${index}`,
         'aria-controls': `vertical-tabpanel-${index}`,
     };
 }
 
-export default function VerticalTabs(array) {
+export default function VerticalTabs({ array }) {
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
@@ -104,28 +104,82 @@ export default function VerticalTabs(array) {
     };
 
     return (
-        <Box
-            sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224 }}
-        >
-            <Tabs
-                orientation="vertical"
-                variant="scrollable"
-                value={value}
-                onChange={handleChange}
-                aria-label="Vertical tabs example"
-                sx={{ borderRight: 1, borderColor: 'divider' }}
+        <TabContext value={value}>
+            <Box
+                sx={{
+                    flexGrow: 1,
+                    bgcolor: 'background.paper',
+                    display: 'flex',
+                    minHeight: 300,
+                    height: 'auto',
+                    maxHeight: 700,
+                }}
             >
-                <Tab label="Item One" {...a11yProps(0)} />
+                <Tabs
+                    orientation="vertical"
+                    variant="scrollable"
+                    value={value}
+                    onChange={handleChange}
+                    aria-label="Vertical tabs example"
+                    sx={{
+                        borderRight: 1,
+                        borderColor: 'divider',
+                    }}
+                >
+                    {array.map((item, index) => (
+                        <Tab
+                            label={Object.keys(item)[0]}
+                            {...allyProps(index)}
+                            sx={{
+                                textTransform: 'none'
+                            }}
+                        />
+                    ))}
+                </Tabs>
                 {array.map((item, index) => (
-                    <Tab label={Object.keys(item)[0]} {...a11yProps(index)} />
+                    <TabPanel
+                        value={index}
+                        key={index}
+                        sx={{
+                            p: 3,
+                            width: 500,
+                            textAlign: 'justify',
+                            overflowX: 'hidden',
+                            overflowY: 'scroll'
+                        }}
+                    >
+                        {
+                            Object.values(item)[0].description
+                        }
+                        {
+                            Object.values(item)[0].image !== ''
+                                ?
+                                <img 
+                                    style={{ 
+                                        maxWidth: 290
+                                         }} 
+                                    src={Object.values(item)[0].image} 
+                                    alt={Object.keys(item)[0]} />
+                                :
+                                null
+                        }
+                        {
+                            Object.values(item)[0].extra.length > 0
+                                ?
+                                <ul>
+                                    {
+                                        Object.values(item)[0].extra.map((extra, index) => (
+                                            <li key={index}>{extra}</li>
+                                        ))
+                                    }
+                                </ul>
+                                :
+                                null
+                        }
+                    </TabPanel>
                 ))}
-            </Tabs>
-            {array.map((item, index) => (
-                <TabPanel value={index} key={index}>{
-                    Object.values(item)[0].description
-                }</TabPanel>
-            ))}
-        </Box>
+            </Box>
+        </TabContext>
     );
 }
 export { AbilitiesTabs, PloysTabs, VerticalTabs };
