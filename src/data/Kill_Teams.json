@@ -3,7 +3,7 @@
     "Troops": [
       {
         "Kommando Boy": {
-          "image": "images/kill_teams/kommando/kommando_boy.jpg",
+          "image": "killteam_assistant/images/kill_teams/kommando/kommando_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -43,7 +43,7 @@
       },
       {
         "Kommando Slasha Boy": {
-          "image": "images/kill_teams/kommando/kommando_slasha_boy.jpg",
+          "image": "killteam_assistant/images/kill_teams/kommando/kommando_slasha_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -88,7 +88,7 @@
       },
       {
         "Kommando Breacha Boy": {
-          "image": "images/kill_teams/kommando/kommando_breacha_boy.jpg",
+          "image": "killteam_assistant/images/kill_teams/kommando/kommando_breacha_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -133,7 +133,7 @@
       },
       {
         "Kommando Snipa Boy": {
-          "image": "images/kill_teams/kommando/kommando_snipa_boy.jpg",
+          "image": "killteam_assistant/images/kill_teams/kommando/kommando_snipa_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -176,7 +176,7 @@
       },
       {
         "Kommando Dakka Boy": {
-          "image": "images/kill_teams/kommando/kommando_dakka_boy.jpg",
+          "image": "killteam_assistant/images/kill_teams/kommando/kommando_dakka_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -220,7 +220,7 @@
       },
       {
         "Kommando Comms Boy": {
-          "image": "images/kill_teams/kommando/kommando_comms_boy.jpg",
+          "image": "killteam_assistant/images/kill_teams/kommando/kommando_comms_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -267,7 +267,7 @@
       },
       {
         "Kommando Burna Boy": {
-          "image": "images/kill_teams/kommando/kommando_burna_boy.jpg",
+          "image": "killteam_assistant/images/kill_teams/kommando/kommando_burna_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -308,7 +308,7 @@
       },
       {
         "Kommando Rokkit Boy": {
-          "image": "images/kill_teams/kommando/kommando_rokkit_boy.jpg",
+          "image": "killteam_assistant/images/kill_teams/kommando/kommando_rokkit_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -352,7 +352,7 @@
       },
       {
         "Kommando Grot": {
-          "image": "images/kill_teams/kommando/kommando_grot.jpg",
+          "image": "killteam_assistant/images/kill_teams/kommando/kommando_grot.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -385,7 +385,7 @@
       },
       {
         "Kommando Nob": {
-          "image": "images/kill_teams/kommando/kommando_nob.jpg",
+          "image": "killteam_assistant/images/kill_teams/kommando/kommando_nob.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -437,7 +437,7 @@
       },
       {
         "Bomb Squig": {
-          "image": "images/kill_teams/kommando/bomb_squig.jpg",
+          "image": "killteam_assistant/images/kill_teams/kommando/bomb_squig.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,

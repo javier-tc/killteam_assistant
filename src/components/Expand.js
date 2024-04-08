@@ -12,14 +12,15 @@ function AccordionExpandDefault({ name, details }) {
                 sx={{ width: 'auto' }}
             >
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon color='warning'/>}
                     aria-controls="panel2-content"
                     id="panel2-header"
                     sx={{
                         border: 1,
                         borderRadius: 0,
-                        color: '#1E1E1E',
-                        backgroundColor: '#fff',
+                        color: '#fff',
+                        borderColor: '#C3510A',
+                        backgroundColor: '#1E1E1E',
                         paddingHorizontal: 1,
 
                     }}
@@ -28,10 +29,11 @@ function AccordionExpandDefault({ name, details }) {
                 </AccordionSummary>
                 <AccordionDetails
                     sx={{
-                        border: 1,
+                        border: 0,
                         borderRadius: 0,
-                        color: '#1E1E1E',
-                        backgroundColor: '#E8E8E8',
+                        borderColor: '#C3510A',
+                        color: '#fff',
+                        backgroundColor: '#1E1E1E',
                         padding: 3,
                     }}
                 >
@@ -51,13 +53,20 @@ function SimpleAccordionExpand({ name, details }) {
                 sx={{ width: 'auto' }}
             >
                 <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
+                    expandIcon={<ExpandMoreIcon color='warning'/>}
                     aria-controls="panel2-content"
                     id="panel2-header"
+                    sx={{
+                        color: '#C3510A',
+                        borderColor: '#C3510A',
+                        border: 1,
+                        backgroundColor: '#1E1E1E',
+                    }}
                 >
                     <Typography sx={{ fontWeight: 'bold' }}>{name}</Typography>
                 </AccordionSummary>
-                <AccordionDetails>
+                <AccordionDetails
+                    sx={{ borderColor: '#C3510A', color: '#fff', backgroundColor: '#1E1E1E' }}>
                     <Typography>
                         {details}
                     </Typography>

@@ -24,7 +24,7 @@
         {
             "Blast x": {
                 "description": "Each time a friendly operative performs a Shoot action and selects this weapon (or, in the case of profiles, this weapon’s profile), after making the shooting attack against the target, make a shooting attack with this weapon (using the same profile) against each other operative Visible to and within X of the original target – each of them is a valid target and cannot be in Cover. X is the distance after the weapon’s Blast, e.g. Blast ⬤[2]. An operative cannot make a shooting attack with this weapon by performing an Overwatch action.",
-                "image": "images/appendix/blast_x.jpg",
+                "image": "killteam_assistant/images/appendix/blast_x.jpg",
                 "extra": [
                     "An operative performs a Shoot action, selects a ranged weapon with the Blast special rule, and selects operative A as the target.",
                     "After making the shooting attack against operative A, it makes a shooting attack against operative B, determining if it is a valid target as if operative A was making the shooting attack.",
@@ -171,7 +171,7 @@
         {
             "Torrent x": {
                 "description": "Each time a friendly operative performs a Shoot action or Overwatch action and selects this weapon, after making the shooting attack against the target, it can make a shooting attack with this weapon against each other valid target within x of the original target and each other, x is the distance after the weapon’s Torrent, e.g. Torrent ⬤[2].",
-                "image": "images/appendix/torrent_x.jpg",
+                "image": "killteam_assistant/images/appendix/torrent_x.jpg",
                 "extra": [
                     "An operative performs a Shoot action, selects a ranged weapon with the Torrent special rule, and selects operative A as the target.",
                     "After making the shooting attack against operative A, it makes a shooting attack against operative B and C, determining if they are a valid target as normal.",

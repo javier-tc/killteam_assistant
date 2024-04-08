@@ -14,22 +14,32 @@ function AbilitiesTabs({ array }) {
 
     return (
         <TabContext value={value}>
-            <Box sx={{ maxWidth: '100%', bgcolor: 'background.paper' }}>
+            <Box sx={{ 
+                maxWidth: '100%', 
+                bgcolor: '#1E1E1E',
+                
+                }}>
                 <Tabs
                     value={value}
                     onChange={handleChange}
                     allowScrollButtonsMobile
                     centered
                     aria-label="scrollable force tabs example"
+                    indicatorColor='primary'
+                    textColor='inherit'
+                    sx={{
+                        color: '#C3510A',
+                    }}
                 >
                     {array.map((item, index) => (
                         <Tab label={Object.keys(item)[0]} value={index.toString()} key={index} />
                     ))}
                 </Tabs>
-            </Box>
+            
             {array.map((item, index) => (
                 <TabPanel value={index.toString()} key={index}>{Object.values(item)[0]}</TabPanel>
             ))}
+            </Box>
 
         </TabContext>
     );
@@ -43,7 +53,7 @@ function PloysTabs({ array }) {
 
     return (
         <TabContext value={value}>
-            <Box sx={{ maxWidth: '100%', bgcolor: 'background.paper' }}>
+            <Box sx={{ maxWidth: '100%', bgcolor: '#1E1E1E' }}>
                 <Tabs
                     value={value}
                     onChange={handleChange}
@@ -51,15 +61,21 @@ function PloysTabs({ array }) {
                     scrollButtons
                     allowScrollButtonsMobile
                     aria-label="scrollable force tabs example"
+                    indicatorColor='secondary'
+                    textColor='inherit'
+                    sx={{
+                        color: '#C3510A',
+                    }}
                 >
                     {array.map((item, index) => (
                         <Tab label={Object.keys(item)[0] + ' [' + Object.values(item)[0].cost + ']'} value={index.toString()} key={index} />
                     ))}
                 </Tabs>
-            </Box>
+            
             {array.map((item, index) => (
                 <TabPanel value={index.toString()} key={index}>{Object.values(item)[0].description}</TabPanel>
             ))}
+            </Box>
         </TabContext>
     );
 }
@@ -108,7 +124,7 @@ export default function VerticalTabs({ array }) {
             <Box
                 sx={{
                     flexGrow: 1,
-                    bgcolor: 'background.paper',
+                    bgcolor: '#1E1E1E',
                     display: 'flex',
                     minHeight: 300,
                     height: 'auto',
@@ -121,9 +137,12 @@ export default function VerticalTabs({ array }) {
                     value={value}
                     onChange={handleChange}
                     aria-label="Vertical tabs example"
+                    indicatorColor=''
+                    textColor='inherit'
                     sx={{
+                        color: '#C3510A',
                         borderRight: 1,
-                        borderColor: 'divider',
+                        borderColor: '#C3510A',
                     }}
                 >
                     {array.map((item, index) => (
