@@ -9,7 +9,13 @@ function AccordionExpandDefault({ name, details }) {
     return (
         <div>
             <Accordion
-                sx={{ width: 'auto' }}
+                sx={{
+                    maxWidth: 700,
+                    width: '100%',
+                    '@media (max-width: 400px)': {
+                        maxWidth: '100%'
+                    }
+                }}
             >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon color='warning'/>}
@@ -22,7 +28,6 @@ function AccordionExpandDefault({ name, details }) {
                         borderColor: '#C3510A',
                         backgroundColor: '#1E1E1E',
                         paddingHorizontal: 1,
-
                     }}
                 >
                     <Typography sx={{ fontWeight: 'bold' }}>{name}</Typography>
@@ -50,7 +55,13 @@ function SimpleAccordionExpand({ name, details }) {
     return (
         <div>
             <Accordion
-                sx={{ width: 'auto' }}
+                sx={{
+                    maxWidth: 600,
+                    width: '100%',
+                    '@media (max-width: 400px)': {
+                        maxWidth: '100%'
+                    }
+                }}
             >
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon color='warning'/>}
@@ -73,7 +84,7 @@ function SimpleAccordionExpand({ name, details }) {
                 </AccordionDetails>
             </Accordion>
         </div>
-);
+    );
 }
 
 export { AccordionExpandDefault, SimpleAccordionExpand };

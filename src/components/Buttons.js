@@ -6,30 +6,33 @@ import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 
 
 function TroopButton({ increase }) {
-
   return (
     <>
       <Button
         onClick={increase}
         color="success"
         variant='contained'
-        sx={{ maxHeight: '25px' }}
-      >+</Button>
+        size='small'
+        sx={{ maxWidth: '20px', maxHeight: '20px', minWidth: '20px', minHeight: '20px' }}
+      >
+        +
+      </Button>
     </>
   );
 }
 
 
 
-export default function FloatingActionButton({onClick}) {
+function FloatingActionButton({ onClick }) {
   return (
     <Box sx={{ '& > :not(style)': { m: 0 } }}>
-      <Fab color="error" aria-label="add" onClick={onClick} size='small'>
+      <Fab color="error" aria-label="add" onClick={onClick} size='small' 
+      sx={{ maxWidth: '20px', maxHeight: '20px', minWidth: '20px', minHeight: '20px' }}>
         <HighlightOffIcon />
       </Fab>
     </Box>
   );
 }
 
-  
+
 export { TroopButton, FloatingActionButton };

@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
 import Appendix from '../data/Appendix.json';
-import { SimpleAccordionExpand } from "../components/Expand";
+import {  AccordionExpandDefault } from "../components/Expand";
 import { VerticalTabs } from "../components/Tabs";
 const appendix = Appendix;
 const appendix_names = Object.keys(appendix);
@@ -16,7 +15,7 @@ function RulesRender() {
                 {/* {appendix[name].map((item, index) => (
                     console.log(Object.values(item)[0].description)
                 ))} */}
-                    <SimpleAccordionExpand
+                    <AccordionExpandDefault
                         key={index}
                         name={name}
                         details={

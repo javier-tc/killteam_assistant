@@ -35,7 +35,6 @@ function App() {
   };
 
   const deleteTroop = (troopID) => {
-    console.log("deleting", troopID);
     setSelectedTroops(prevTroops => {
       const index = prevTroops.findIndex(troop => troopID === troop.id);
       if (index !== -1) {
@@ -78,7 +77,7 @@ function App() {
                     const image = troopData[troopName].image;
                     return (
                       <div key={troopName} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '5px' }}>
-                        <div style={{ marginRight: 'auto', display: 'flex', alignItems: 'center' }}>{<Avatar src={image} alt='' />}{troopName}</div>
+                        <div style={{ marginRight: 'auto', display: 'flex', alignItems: 'center' }}>{<Avatar src={image} alt='' sx={{ marginRight: '5px' }} />}{troopName}</div>
                         <TroopButton
                           increase={() => toggleTroop(factionName, troopName, stats, abilities, weapons, unique_actions, datacard_related, image)}
                         />
@@ -125,8 +124,10 @@ function App() {
       onChange={(e) => handleWChange(troop.id, e.target.value)}
       style={
         {
-          width: '30px',
-          color: troop.w === '0' ? 'red' : 'inherit'
+          width: 'auto',
+          maxWidth: '33px',
+          color: troop.w === '0' ? 'red' : 'inherit',
+          backgroundColor: 'inherit'
         }
       }
     />
@@ -136,12 +137,12 @@ function App() {
     if (selectedTroops.length === 0) {
       return <h2>No hay tropas seleccionadas</h2>;
     }
-  
+
     return selectedTroops.map((troop) => (
-      <Grid container spacing={1} columns={30} marginBottom={2}>
-        <Grid item xs={28}>
+      <Grid container spacing={1} marginBottom={2} columns={{ xs: 12, sm: 12, md: 12, lg: 12 }}>
+        <Grid item xs={11} sm={11} md={11} lg={11}>
           <AccordionExpandDefault
-            name={troop.w === '0' ? troop.name + ' ☠️' : troop.name + ' ❤️: ' + troop.w}
+            name={troop.w === '0' ? troop.name + ' ☠️' : <div style={{ textAlign: 'left' }}>{troop.name} <br /> ❤️: {troop.w}</div>}
             details={
               <div key={troop.id}>
                 <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '5px' }}>
@@ -169,13 +170,13 @@ function App() {
                 {troop.unique_actions.length === 0 ? null :
                   <div style={{ marginBottom: '10px' }}>
                     <SimpleAccordionExpand
-                      name={'Acciones únicas'}
+                      name={'Acciones únicas'}
                       details={<AbilitiesTabs array={troop.unique_actions} />}
                     />
                   </div>}
                 {troop.datacard_related.length === 0 ? null :
-                  <div style={{ marginBottom: '10px' }}>
-                    <strong> Datacard Related: </strong>
+                  <div style={{ marginBottom: '10px', textAlign: 'left' }}>
+                    <strong style={{ color: '#C3510A' }}> Datacard Related: </strong>
                     <ul>
                       {troop.datacard_related.map((datacard, index) => (
                         <li key={index}>{datacard}</li>
@@ -186,7 +187,7 @@ function App() {
             }
           />
         </Grid>
-        <Grid item xs={1} alignContent={'center'}>
+        <Grid item xs={1} sm={1} md={1} lg={1} style={{ alignContent: 'center' }}>
           <FloatingActionButton
             onClick={deleteTroop.bind(this, troop.id)}
           />
@@ -194,7 +195,9 @@ function App() {
       </Grid>
     ));
   };
-  
+
+
+
 
   return (
     <div className="App">
