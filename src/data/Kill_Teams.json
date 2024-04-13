@@ -2,8 +2,8 @@
   "Kommando": {
     "Troops": [
       {
-        "Kommando Boy": {
-          "image": "killteam_assistant/images/kill_teams/kommando/kommando_boy.jpg",
+        "KOMMANDO BOY": {
+          "image": "images/kill_teams/kommando/kommando_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -42,8 +42,8 @@
         }
       },
       {
-        "Kommando Slasha Boy": {
-          "image": "killteam_assistant/images/kill_teams/kommando/kommando_slasha_boy.jpg",
+        "KOMMANDO SLASHA BOY": {
+          "image": "images/kill_teams/kommando/kommando_slasha_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -77,7 +77,13 @@
             }
           ],
           "abilities": [
-            {"Dat All You Got?": "Each time after this operative fights in combat, if it lost any wounds in that combat but was not incapacitated, you can roll one D6: on a 4+,the enemy operative that fought it in that combat suffers 2 mortal wounds."}
+            {
+              "Dat All You Got?": {
+                "description": "",
+                "effect": "Each time after this operative fights in combat, if it lost any wounds in that combat but was not incapacitated, you can roll one D6: on a 4+,the enemy operative that fought it in that combat suffers 2 mortal wounds.",
+                "extra": []
+              }
+            }
           ],
           "unique_actions": [],
           "datacard_related": [
@@ -87,8 +93,8 @@
         }
       },
       {
-        "Kommando Breacha Boy": {
-          "image": "killteam_assistant/images/kill_teams/kommando/kommando_breacha_boy.jpg",
+        "KOMMANDO BREACHA BOY": {
+          "image": "images/kill_teams/kommando/kommando_breacha_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -121,8 +127,20 @@
             }
           ],
           "abilities": [
-            {"Bull Charge": "Each time this operative fights in combat, if it made a charge move during that activation, its breacha ram gains the Stun critical hit rule for that combat."},
-            {"Breach": "Each time this operative performs a Normal Move, Dash or Charge action, it can move through parts of terrain features that are no more than ▲[1] thick as if they were not there."}
+            {
+              "Bull Charge": {
+                "description": "",
+                "effect": "Each time this operative fights in combat, if it made a charge move during that activation, its breacha ram gains the Stun critical hit rule for that combat.",
+                "extra": []
+              }
+            },
+            {
+              "Breach": {
+                "description": "",
+                "effect": "Each time this operative performs a Normal Move, Dash or Charge action, it can move through parts of terrain features that are no more than ▲[1] thick as if they were not there.",
+                "extra": []
+              }
+            }
           ],
           "unique_actions": [],
           "datacard_related": [
@@ -132,8 +150,8 @@
         }
       },
       {
-        "Kommando Snipa Boy": {
-          "image": "killteam_assistant/images/kill_teams/kommando/kommando_snipa_boy.jpg",
+        "KOMMANDO SNIPA BOY": {
+          "image": "images/kill_teams/kommando/kommando_snipa_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -165,8 +183,20 @@
           ],
           "abilities": [],
           "unique_actions": [
-            {"'Av it! (2AP)": "Perform a free Shoot action with this operative using its scoped big shoota. After making the shooting attack against the target, this operative can make a shooting attack against each other valid target within ⬤[2] of the original target. Each time this operative makes a shooting attack for this action, subtract 2 from the Attacks characteristic of its scoped big shoota for that shooting attack."},
-            {"Da Best Spot (2AP)": "Perform a free Shoot action with this operative using its scoped big shoota, even if it has a Conceal order."}
+            {
+              "'Av it! (2AP)": {
+                "description": "",
+                "effect": "Perform a free Shoot action with this operative using its scoped big shoota. After making the shooting attack against the target, this operative can make a shooting attack against each other valid target within ⬤[2] of the original target. Each time this operative makes a shooting attack for this action, subtract 2 from the Attacks characteristic of its scoped big shoota for that shooting attack.",
+                "extra": []
+              }
+            },
+            {
+              "Da Best Spot (2AP)": {
+                "description": "",
+                "effect": "Perform a free Shoot action with this operative using its scoped big shoota, even if it has a Conceal order.",
+                "extra": []
+              }
+            }
           ],
           "datacard_related": [
             "JUST A SCRATCH",
@@ -175,8 +205,8 @@
         }
       },
       {
-        "Kommando Dakka Boy": {
-          "image": "killteam_assistant/images/kill_teams/kommando/kommando_dakka_boy.jpg",
+        "KOMMANDO DAKKA BOY": {
+          "image": "images/kill_teams/kommando/kommando_dakka_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -207,10 +237,22 @@
             }
           ],
           "abilities": [
-            {"Unload Slugs": "Each time this operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, if the target is within ⬟[6] of it, you can re-roll any or all of your attack dice."}
+            {
+              "Unload Slugs": {
+                "description": "",
+                "effect": "Each time this operative makes a shooting attack with this weapon, in the Roll Attack Dice step of that shooting attack, if the target is within ⬟[6] of it, you can re-roll any or all of your attack dice.",
+                "extra": []
+              }
+            }
           ],
           "unique_actions": [
-            {"Dakka Dash (1AP)": "Perform a free Shoot action and free Dash action with this operative in any order. You can only select a dakka shoota for this action’s shooting attack."}
+            {
+              "Dakka Dash (1AP)": {
+                "description": "",
+                "effect": "Perform a free Shoot action and free Dash action with this operative in any order. You can only select a dakka shoota for this action’s shooting attack.",
+                "extra": []
+              }
+            }
           ],
           "datacard_related": [
             "JUST A SCRATCH",
@@ -219,8 +261,8 @@
         }
       },
       {
-        "Kommando Comms Boy": {
-          "image": "killteam_assistant/images/kill_teams/kommando/kommando_comms_boy.jpg",
+        "KOMMANDO COMMS BOY": {
+          "image": "images/kill_teams/kommando/kommando_comms_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -254,10 +296,22 @@
             }
           ],
           "abilities": [
-            {"I Got a Plan, Ladz": "Once per Turning Point, during this operative’s activation, it can perform a mission or Pick Up action for one less AP (to a minimum of 0AP). Once per Turning Point, during this operative’s activation, it can perform a mission or Pick Up action for one less AP (to a minimum of 0AP)."}
+            {
+              "I Got a Plan, Ladz": {
+                "description": "",
+                "effect": "Once per Turning Point, during this operative’s activation, it can perform a mission or Pick Up action for one less AP (to a minimum of 0AP). Once per Turning Point, during this operative’s activation, it can perform a mission or Pick Up action for one less AP (to a minimum of 0AP).",
+                "extra": []
+              }
+            }
           ],
           "unique_actions": [
-            {"Listen In (1AP)": "Select one friendly KOMMANDO💀 operative within ⬟[6] of and Visible to this operative. Add 1 to its APL. This operative cannot perform this action if it is within Engagement Range of an enemy operative."}
+            {
+              "Listen In (1AP)": {
+                "description": "",
+                "effect": "Select one friendly KOMMANDO operative within ⬟[6] of and Visible to this operative. Add 1 to its APL. This operative cannot perform this action if it is within Engagement Range of an enemy operative.",
+                "extra": []
+              }
+            }
           ],
           "datacard_related": [
             "JUST A SCRATCH",
@@ -266,8 +320,8 @@
         }
       },
       {
-        "Kommando Burna Boy": {
-          "image": "killteam_assistant/images/kill_teams/kommando/kommando_burna_boy.jpg",
+        "KOMMANDO BURNA BOY": {
+          "image": "images/kill_teams/kommando/kommando_burna_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -307,8 +361,8 @@
         }
       },
       {
-        "Kommando Rokkit Boy": {
-          "image": "killteam_assistant/images/kill_teams/kommando/kommando_rokkit_boy.jpg",
+        "KOMMANDO ROKKIT BOY": {
+          "image": "images/kill_teams/kommando/kommando_rokkit_boy.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -341,7 +395,13 @@
             }
           ],
           "abilities": [
-            {"Boom Boy":"Each time this operative performs a Shoot action during its activation, in the Roll Attack Dice step of that action’s shooting attack, if it has not moved during that activation, you can re-roll any or all of your attack dice."}
+            {
+              "Boom Boy": {
+                "description": "",
+                "effect": "Each time this operative performs a Shoot action during its activation, in the Roll Attack Dice step of that action’s shooting attack, if it has not moved during that activation, you can re-roll any or all of your attack dice.",
+                "extra": []
+              }
+            }
           ],
           "unique_actions": [],
           "datacard_related": [
@@ -351,8 +411,8 @@
         }
       },
       {
-        "Kommando Grot": {
-          "image": "killteam_assistant/images/kill_teams/kommando/kommando_grot.jpg",
+        "KOMMANDO GROT": {
+          "image": "images/kill_teams/kommando/kommando_grot.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -373,10 +433,22 @@
             }
           ],
           "abilities": [
-            {"Sneaky Zogger":"This operative cannot have an Engage order. In addition, this operative is always treated as having a Conceal order, regardless of any other rules (e.g. Vantage Point)."}
+            {
+              "Sneaky Zogger": {
+                "description": "",
+                "effect": "This operative cannot have an Engage order. In addition, this operative is always treated as having a Conceal order, regardless of any other rules (e.g. Vantage Point).",
+                "extra": []
+              }
+            }
           ],
           "unique_actions": [
-            {"Grappling Hook (1AP)":"Select a point on a terrain feature that is Visible to this operative (treat that point as an intended target). Perform a free Normal Move action with this operative, moving in a single straight line with an unlimited Movement as though it can FLY. It must finish that move within ▲[1] of that point. This operative cannot perform the Operate Hatch action during this action."}
+            {
+              "Grappling Hook (1AP)": {
+                "description": "",
+                "effect": "Select a point on a terrain feature that is Visible to this operative (treat that point as an intended target). Perform a free Normal Move action with this operative, moving in a single straight line with an unlimited Movement as though it can FLY. It must finish that move within ▲[1] of that point. This operative cannot perform the Operate Hatch action during this action.",
+                "extra": []
+              }
+            }
           ],
           "datacard_related": [
             "SNEAKY GIT"
@@ -384,8 +456,8 @@
         }
       },
       {
-        "Kommando Nob": {
-          "image": "killteam_assistant/images/kill_teams/kommando/kommando_nob.jpg",
+        "KOMMANDO NOB": {
+          "image": "images/kill_teams/kommando/kommando_nob.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -426,7 +498,13 @@
             }
           ],
           "abilities": [
-            {"Get it Dun!": "Each time this operative is activated, you can select one friendly KOMMANDO💀 operative within ⬟[6] of and Visible to it. Add 1 to the selected operative’s APL."}
+            {
+              "Get it Dun!": {
+                "description": "",
+                "effect": "Each time this operative is activated, you can select one friendly KOMMANDO operative within ⬟[6] of and Visible to it. Add 1 to the selected operative’s APL.",
+                "extra": []
+              }
+            }
           ],
           "unique_actions": [],
           "datacard_related": [
@@ -436,8 +514,8 @@
         }
       },
       {
-        "Bomb Squig": {
-          "image": "killteam_assistant/images/kill_teams/kommando/bomb_squig.jpg",
+        "BOMB SQUIG": {
+          "image": "images/kill_teams/kommando/bomb_squig.jpg",
           "stats": {
             "M": "3 ⬤[2]",
             "APL": 2,
@@ -471,10 +549,34 @@
             }
           ],
           "abilities": [
-            {"Bomb Squig": "This operative can perform a Shoot action with this weapon if it is within Engagement Range of an enemy operative. When this operative performs a Shoot action and selects this ranged weapon, make a shooting attack against each other operative within its Engagement Range of it (even if it has friendly operatives within its Engagement Range) with this weapon - each of them is a valid target and cannot be in Cover. After all of those shooting attacks have been made, this operative is incapacitated and do not roll for its BOOM! ability. This operative cannot make a shooting attack with this weapon by performing an Overwatch action."},
-            {"THE BALANCE DATASLATE": "This operative’s APL characteristic cannot be positively modified."},
-            {"BOOM!": "If this operative is incapacitated, roll one D6: on a 3+, it makes a shooting attack using its dynamite."},
-            {"Stoopid": "This operative cannot perform mission actions, cannot perform the Pick Up action and cannot have a Conceal order. It cannot be equipped with equipment. In narrative play, it cannot gain (or lose) experience and automatically passes Casualty tests."}
+            {
+              "Bomb Squig": {
+                "description": "",
+                "effect": "This operative can perform a Shoot action with this weapon if it is within Engagement Range of an enemy operative. When this operative performs a Shoot action and selects this ranged weapon, make a shooting attack against each other operative within its Engagement Range of it (even if it has friendly operatives within its Engagement Range) with this weapon - each of them is a valid target and cannot be in Cover. After all of those shooting attacks have been made, this operative is incapacitated and do not roll for its BOOM! ability. This operative cannot make a shooting attack with this weapon by performing an Overwatch action.",
+                "extra": []
+              }
+            },
+            {
+              "THE BALANCE DATASLATE": {
+                "description": "",
+                "effect": "This operative’s APL characteristic cannot be positively modified.",
+                "extra": []
+              }
+            },
+            {
+              "BOOM!": {
+                "description": "",
+                "effect": "If this operative is incapacitated, roll one D6: on a 3+, it makes a shooting attack using its dynamite.",
+                "extra": []
+              }
+            },
+            {
+              "Stoopid": {
+                "description": "",
+                "effect": "This operative cannot perform mission actions, cannot perform the Pick Up action and cannot have a Conceal order. It cannot be equipped with equipment. In narrative play, it cannot gain (or lose) experience and automatically passes Casualty tests.",
+                "extra": []
+              }
+            }
           ],
           "unique_actions": [],
           "datacard_related": [
@@ -485,52 +587,1117 @@
     ],
     "Abilities": [
       {
-        "THROAT SLITTAS": "This operative (excluding BOMB SQUIG operatives) can perform a Charge action while it has a Conceal order."
+        "THROAT SLITTAS": {
+          "description": "KOMMANDO operatives in a KOMMANDO kill team (excluding BOMB SQUIG operatives) have the following ability:",
+          "effect": "This operative can perform a Charge action while it has a Conceal order.",
+          "extra": []
+        }
       }
     ],
     "Strategic_Ploys": [
       {
         "SSSSHHHH!": {
           "cost": "1CP",
-          "description": "Friendly KOMMANDO💀 operatives that are not within Line of Sight of enemy operatives, or have a Conceal order and are more than ⬟[6] from enemy operatives, can immediately perform a free Dash action. You can only use this Strategic Ploy once."
+          "description": "Friendly KOMMANDO operatives that are not within Line of Sight of enemy operatives, or have a Conceal order and are more than ⬟[6] from enemy operatives, can immediately perform a free Dash action. You can only use this Strategic Ploy once."
         }
       },
       {
         "DAKKA! DAKKA! DAKKA!": {
           "cost": "1CP",
-          "description": "Until the end of the Turning Point, each time a friendly KOMMANDO💀 operative makes a shooting attack, in the Roll Attack Dice step of that shooting attack, if you retain any critical hits, you can select one of your failed hits to be retained as a successful normal hit."
+          "description": "Until the end of the Turning Point, each time a friendly KOMMANDO operative makes a shooting attack, in the Roll Attack Dice step of that shooting attack, if you retain any critical hits, you can select one of your failed hits to be retained as a successful normal hit."
         }
       },
       {
         "WAAAGH!": {
           "cost": "1CP",
-          "description": "Until the end of the Turning Point, each time a friendly KOMMANDO💀 operative fights in combat, in the Roll Attack Dice step of that combat, when you would retain two or more normal hits, you can select one of those hits to be retained as a critical hit instead."
+          "description": "Until the end of the Turning Point, each time a friendly KOMMANDO operative fights in combat, in the Roll Attack Dice step of that combat, when you would retain two or more normal hits, you can select one of those hits to be retained as a critical hit instead."
         }
       },
       {
         "SKULK ABOUT": {
-          "cost":"1CP",
-          "description":"Until the end of the Turning Point, each time a shooting attack is made against a friendly KOMMANDO💀 operative, before rolling defence dice for that shooting attack, if it has a Conceal order, you can retain one as a successful normal save without rolling it, regardless of any rules that treat the operative as having an Engage order (e.g. Vantage Point)."
+          "cost": "1CP",
+          "description": "Until the end of the Turning Point, each time a shooting attack is made against a friendly KOMMANDO operative, before rolling defence dice for that shooting attack, if it has a Conceal order, you can retain one as a successful normal save without rolling it, regardless of any rules that treat the operative as having an Engage order (e.g. Vantage Point)."
+        }
       }
-    }
     ],
     "Tactical_Ploys": [
       {
         "JUST A SCRATCH": {
           "cost": "1CP",
-          "description": "Use this Tactical Ploy in the Resolve Successful Hits step of a shooting attack or combat, when damage would be inflicted on a friendly KOMMANDO💀 operative (excluding BOMB SQUIG operatives) from a normal hit. Ignore the damage inflicted from that attack dice."
+          "description": "Use this Tactical Ploy in the Resolve Successful Hits step of a shooting attack or combat, when damage would be inflicted on a friendly KOMMANDO operative (excluding BOMB SQUIG operatives) from a normal hit. Ignore the damage inflicted from that attack dice."
         }
       },
       {
         "KRUMP 'EM": {
           "cost": "1CP",
-          "description": "Use this Tactical Ploy at the end of the Firefight phase. Select one friendly KOMMANDO💀 operative. It can perform a free Fight action."
+          "description": "Use this Tactical Ploy at the end of the Firefight phase. Select one friendly KOMMANDO operative. It can perform a free Fight action."
         }
       },
       {
         "SNEAKY GIT": {
           "cost": "1CP",
-          "description": "Use this Tactical Ploy in the Set Up Operatives step of the mission sequence. Select one friendly KOMMANDO💀 operative (excluding BOMB SQUIG operatives). That operative can be set up with a Conceal order anywhere on the battlefield that is within ▲[1] of Heavy terrain and more than ⬟[6] from enemy operatives and the enemy drop zone. You can only use it once per battle, and that operative cannot have its order changed in the first Turning Point (i.e. from the Infiltrate scouting option)."
+          "description": "Use this Tactical Ploy in the Set Up Operatives step of the mission sequence. Select one friendly KOMMANDO operative (excluding BOMB SQUIG operatives). That operative can be set up with a Conceal order anywhere on the battlefield that is within ▲[1] of Heavy terrain and more than ⬟[6] from enemy operatives and the enemy drop zone. You can only use it once per battle, and that operative cannot have its order changed in the first Turning Point (i.e. from the Infiltrate scouting option)."
+        }
+      }
+    ]
+  },
+  "Veteran Guardsman": {
+    "Troops": [
+      {
+        "TROOPER VETERAN": {
+          "description": "Astra Militarum Veterans have a great deal of combat experience, gained over experiencing harsh fighting for months or even years. Armed with lasguns and bayonets, they have faced down terrible danger time and time again.",
+          "stats": {
+            "M": "3",
+            "APL": 2,
+            "GA": 2,
+            "DF": 3,
+            "SV": "5+",
+            "W": 7,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Lasgun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Bayonet",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            }
+          ],
+          "abilities": [],
+          "unique_actions": [],
+          "datacard_related": [
+            "FIELD PROMOTION",
+            "VETERAN GUARDSMAN",
+            "IMPERIUM",
+            "ASTRA MILITARUM",
+            "<REGIMENT>",
+            "TROOPER VETERAN"
+          ]
+        }
+      },
+      {
+        "SERGEANT VETERAN": {
+          "description": "Veteran Sergeants command squads of Veterans in battle. Calm under pressure and unphased by the horrors of war, they are solid combat leaders who will fight tooth and nail to achieve victory as well as see their comrades survive to fight another day.",
+          "stats": {
+            "M": "3",
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 8,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Bolt pistol",
+              "A": 4,
+              "BS_WS": "3+",
+              "D": "3/4",
+              "Special_Rules": [
+                "Rng"
+              ],
+              "Effects": []
+            },
+            {
+              "name": "Boltgun",
+              "A": 4,
+              "BS_WS": "3+",
+              "D": "3/4",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Las pistol",
+              "A": 4,
+              "BS_WS": "3+",
+              "D": "2/3",
+              "Special_Rules": [
+                "Rng"
+              ],
+              "Effects": []
+            },
+            {
+              "name": "Plasma pistol",
+              "profiles": [
+                {
+                  "type": "Standard",
+                  "A": 4,
+                  "BS_WS": "3+",
+                  "D": "5/6",
+                  "Special_Rules": [
+                    "Rng",
+                    "AP1"
+                  ],
+                  "Effects": []
+                },
+                {
+                  "type": "Supercharge",
+                  "A": 4,
+                  "BS_WS": "3+",
+                  "D": "5/6",
+                  "Special_Rules": [
+                    "Rng",
+                    "AP2",
+                    "Hot"
+                  ],
+                  "Effects": []
+                }
+              ]
+            },
+            {
+              "name": "Bayonet",
+              "A": 4,
+              "BS_WS": "3+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Chainsword",
+              "A": 4,
+              "BS_WS": "3+",
+              "D": "3/4",
+              "Special_Rules": [
+                "Balanced"
+              ],
+              "Effects": []
+            },
+            {
+              "name": "Power weapon",
+              "A": 4,
+              "BS_WS": "3+",
+              "D": "4/6",
+              "Special_Rules": [
+                "Lethal 5+"
+              ],
+              "Effects": []
+            }
+          ],
+          "abilities": [
+            {
+              "Guardsmen Orders": ""
+            }
+          ],
+          "unique_actions": [],
+          "datacard_related": [
+            "INSPIRATIONAL LEADERSHIP",
+            "VETERAN GUARDSMAN",
+            "IMPERIUM",
+            "ASTRA MILITARUM",
+            "<REGIMENT>",
+            "LEADER",
+            "SERGEANT VETERAN"
+          ]
+        }
+      },
+      {
+        "SNIPER VETERAN": {
+          "description": "Expert marksmen, their skills honed in the harsh conditions of numerous battlefields, Sniper Veterans are sharpshooters who specialise in cutting down key enemy troops at extreme ranges - all unseen by the foe.",
+          "stats": {
+            "M": "3",
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 7,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Long-las",
+              "A": 4,
+              "BS_WS": "2+",
+              "D": "3/3",
+              "Special_Rules": [],
+              "Effects": [
+                "MW3"
+              ]
+            },
+            {
+              "name": "Bayonet",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            }
+          ],
+          "abilities": [
+            {
+              "Sniper": ""
+            }
+          ],
+          "unique_actions": [],
+          "datacard_related": [
+            "VETERAN GUARDSMAN",
+            "IMPERIUM",
+            "ASTRA MILITARUM",
+            "<REGIMENT>",
+            "SNIPER VETERAN"
+          ]
+        }
+      },
+      {
+        "GUNNER VETERAN": {
+          "description": "With experience and skills in wielding a whole host of specialist weapons, Gunner Veterans are called whether a Sergeant Veteran needs a xenos nest burned to nothing, a bunker reduced to melted sludge or to bring down heavy enemy infantry that lasguns are insufficient for.",
+          "stats": {
+            "M": "3",
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 7,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Flamer",
+              "A": 5,
+              "BS_WS": "2+",
+              "D": "2/2",
+              "Special_Rules": [
+                "Rng",
+                "Torrent"
+              ],
+              "Effects": []
+            },
+            {
+              "name": "Grenade launcher",
+              "profiles": [
+                {
+                  "type": "Frag",
+                  "A": 4,
+                  "BS_WS": "4+",
+                  "D": "2/4",
+                  "Special_Rules": [
+                    "Blast"
+                  ],
+                  "Effects": []
+                },
+                {
+                  "type": "Krak",
+                  "A": 4,
+                  "BS_WS": "4+",
+                  "D": "4/5",
+                  "Special_Rules": [
+                    "AP1"
+                  ],
+                  "Effects": []
+                }
+              ]
+            },
+            {
+              "name": "Meltagun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "6/3",
+              "Special_Rules": [
+                "Rng",
+                "AP2",
+                "MW4"
+              ],
+              "Effects": []
+            },
+            {
+              "name": "Plasma gun",
+              "profiles": [
+                {
+                  "type": "Standard",
+                  "A": 4,
+                  "BS_WS": "4+",
+                  "D": "5/6",
+                  "Special_Rules": [
+                    "AP1"
+                  ],
+                  "Effects": []
+                },
+                {
+                  "type": "Supercharge",
+                  "A": 4,
+                  "BS_WS": "4+",
+                  "D": "5/6",
+                  "Special_Rules": [
+                    "AP2",
+                    "Hot"
+                  ],
+                  "Effects": []
+                }
+              ]
+            },
+            {
+              "name": "Bayonet",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            }
+          ],
+          "abilities": [],
+          "unique_actions": [],
+          "datacard_related": [
+            "VETERAN GUARDSMAN",
+            "IMPERIUM",
+            "ASTRA MILITARUM",
+            "<REGIMENT>",
+            "GUNNER VETERAN"
+          ]
+        }
+      },
+      {
+        "CONFIDANT VETERAN": {
+          "description": "Even the best Sergeant Veterans need to call on solid tactical advice - and their confidants are experts. Experienced troops and capable leaders themselves, they can be trusted to carry out the sergeant’s orders in the field as well as contribute to the formulation of a solid battle plan.",
+          "stats": {
+            "M": "3",
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 7,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Bolt pistol",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "3/4",
+              "Special_Rules": [
+                "Rng"
+              ],
+              "Effects": []
+            },
+            {
+              "name": "Boltgun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "3/4",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Las pistol",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [
+                "Rng"
+              ],
+              "Effects": []
+            },
+            {
+              "name": "Lasgun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Bayonet",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Chainsword",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "3/4",
+              "Special_Rules": [
+                "Balanced"
+              ],
+              "Effects": []
+            }
+          ],
+          "abilities": [
+            {
+              "Second in Command": ""
+            },
+            {
+              "Directive": ""
+            }
+          ],
+          "unique_actions": [],
+          "datacard_related": [
+            "VETERAN GUARDSMAN",
+            "IMPERIUM",
+            "ASTRA MILITARUM",
+            "<REGIMENT>",
+            "CONFIDANT VETERAN"
+          ]
+        }
+      },
+      {
+        "DEMOLITION VETERAN": {
+          "description": "Whether blowing up ammo dumps or cracking open defences, many kill teams need explosives experts. Demolition Veterans are such troops. Naturally daring, they often have to put themselves in harm’s way to plant their remote mines at the optimum point to blow their target into smithereens.",
+          "stats": {
+            "M": "3",
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 7,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Lasgun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Remote mine",
+              "A": 4,
+              "BS_WS": "2+",
+              "D": "5/6",
+              "Special_Rules": [
+                "AP1",
+                "Detonate*",
+                "Silent"
+              ],
+              "Effects": []
+            },
+            {
+              "name": "Bayonet",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            }
+          ],
+          "abilities": [],
+          "unique_actions": [
+            {
+              "Plant Mine (1AP)": ""
+            },
+            {
+              "*Detonate": ""
+            }
+          ],
+          "datacard_related": [
+            "VETERAN GUARDSMAN",
+            "IMPERIUM",
+            "ASTRA MILITARUM",
+            "<REGIMENT>",
+            "DEMOLITION VETERAN"
+          ]
+        }
+      },
+      {
+        "ZEALOT VETERAN": {
+          "description": "Zealot Veterans are deeply spiritual warriors, often claiming their survival through the horrifying battlefields they’ve experienced is only thanks to the direct intervention of the Emperor himself.",
+          "stats": {
+            "M": "3",
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 7,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Lasgun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Bayonet",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            }
+          ],
+          "abilities": [
+            {
+              "The Emperor Protects": ""
+            }
+          ],
+          "unique_actions": [
+            {
+              "Uplifting Primer (1AP)": ""
+            }
+          ],
+          "datacard_related": [
+            "LITANY OF SACRIFICE",
+            "VETERAN GUARDSMAN",
+            "IMPERIUM",
+            "ASTRA MILITARUM",
+            "<REGIMENT>",
+            "ZEALOT VETERAN"
+          ]
+        }
+      },
+      {
+        "MEDIC VETERAN": {
+          "description": "The efforts of the Medic Veteran is all that stands between life and miserable death for the troops of his squad. Equipped with little more than basic medical equipment, they strive to keep their comrades alive in the most hazardous conditions.",
+          "stats": {
+            "M": "3",
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 7,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Lasgun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Bayonet",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            }
+          ],
+          "abilities": [],
+          "unique_actions": [
+            {
+              "Medic!": ""
+            },
+            {
+              "Medikit (1AP)": ""
+            }
+          ],
+          "datacard_related": [
+            "DIAGNOSTICATOR",
+            "VETERAN GUARDSMAN",
+            "IMPERIUM",
+            "ASTRA MILITARUM",
+            "<REGIMENT>",
+            "MEDIC",
+            "MEDIC VETERAN"
+          ]
+        }
+      },
+      {
+        "COMMS VETERAN": {
+          "description": "Comms Veterans are consummate professionals, accompanying their leaders wherever required whilst carrying heavy equipment, all to receive and transmit communications that are vital for their comrades and superiors to understand the inevitable confusion of battle.",
+          "stats": {
+            "M": "3",
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 7,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Lasgun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Bayonet",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            }
+          ],
+          "abilities": [],
+          "unique_actions": [
+            {
+              "Relay Orders": ""
+            },
+            {
+              "Signal (1AP)": ""
+            }
+          ],
+          "datacard_related": [
+            "VID-CAPTURE RELAY",
+            "VETERAN GUARDSMAN",
+            "IMPERIUM",
+            "ASTRA MILITARUM",
+            "<REGIMENT>",
+            "COMMS VETERAN"
+          ]
+        }
+      },
+      {
+        "BRUISER VETERAN": {
+          "description": "For some, war and fighting just agrees with them. Bruiser Veterans are such people. They look the galaxy’s endless malevolent threats in the eye with a trench club in their hand, ready to bludgeon anything and everything to death.",
+          "stats": {
+            "M": "3",
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 7,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Lasgun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Bayonet",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Trench club",
+              "A": 3,
+              "BS_WS": "3+",
+              "D": "3/3",
+              "Special_Rules": [
+                "Stun"
+              ],
+              "Effects": []
+            }
+          ],
+          "abilities": [
+            {
+              "Bruiser": ""
+            }
+          ],
+          "unique_actions": [],
+          "datacard_related": [
+            "VETERAN GUARDSMAN",
+            "IMPERIUM",
+            "ASTRA MILITARUM",
+            "<REGIMENT>",
+            "BRUISER VETERAN"
+          ]
+        }
+      },
+      {
+        "HARDENED VETERAN": {
+          "description": "Some Veterans are resilient above and beyond even their peers. These troops are steel in body as well as in mind, with bionics in the place of body parts lost in battle. Despite the horrific wounds they have suffered, they fight on still, unbowed.",
+          "stats": {
+            "M": "3",
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 7,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Lasgun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Bayonet",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Bionic arm",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": "4/5",
+              "Special_Rules": [],
+              "Effects": []
+            }
+          ],
+          "abilities": [
+            {
+              "Hardened by War": ""
+            }
+          ],
+          "unique_actions": [],
+          "datacard_related": [
+            "VETERAN GUARDSMAN",
+            "IMPERIUM",
+            "ASTRA MILITARUM",
+            "<REGIMENT>",
+            "HARDENED VETERAN"
+          ]
+        }
+      },
+      {
+        "SPOTTER VETERAN": {
+          "description": "To direct battle-winning heavy fire, forward observers form a part of kill teams. These Spotter Veterans possess great focus, accurately guiding salvoes of mortar fire from safe lines even when under immense pressure. With this they can stymie enemy attacks or pin them down in their defences.",
+          "stats": {
+            "M": "3",
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 7,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Lasgun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Bayonet",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            }
+          ],
+          "abilities": [],
+          "unique_actions": [
+            {
+              "Spotting (1AP)": ""
+            },
+            {
+              "Call Artillery (1AP)": ""
+            }
+          ],
+          "datacard_related": [
+            "VETERAN GUARDSMAN",
+            "IMPERIUM",
+            "ASTRA MILITARUM",
+            "<REGIMENT>",
+            "SPOTTER VETERAN"
+          ]
+        }
+      },
+      {
+        "INTELLIGENCE VETERAN": {
+          "description": "Experts in the detection of ambushes and other enemy trickery, Intelligence Veterans are scouts who are adept at moving through rough terrain to gather vital information for their commanders. They are able to spot signs of ambushes and other signs of enemy traps, helping to keep their comrades safe.",
+          "stats": {
+            "M": "3",
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 7,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Lasgun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Bayonet",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            }
+          ],
+          "abilities": [],
+          "unique_actions": [
+            {
+              "Scout (1AP)": ""
+            },
+            {
+              "Ambush Detection (1AP)": ""
+            }
+          ],
+          "datacard_related": [
+            "SCANNER",
+            "VETERAN GUARDSMAN",
+            "IMPERIUM",
+            "ASTRA MILITARUM",
+            "<REGIMENT>",
+            "INTELLIGENCE VETERAN"
+          ]
+        }
+      },
+      {
+        "REPEATER VETERAN": {
+          "description": "Experienced with a wide array of weapons, the Repeater Veterans are adaptable fighters able to employ and maintain any ranged weapon they encounter, ensuring that even when the situation is at its most desperate, they can still bring effective firepower to bear.",
+          "stats": {
+            "M": "3",
+            "APL": 2,
+            "GA": 1,
+            "DF": 3,
+            "SV": "5+",
+            "W": 7,
+            "Base": "25mm"
+          },
+          "weapons": [
+            {
+              "name": "Lasgun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Bayonet",
+              "A": 3,
+              "BS_WS": "4+",
+              "D": "2/3",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Autogun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "3/4",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Boltgun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "3/4",
+              "Special_Rules": [],
+              "Effects": []
+            },
+            {
+              "name": "Flamer",
+              "A": 5,
+              "BS_WS": "2+",
+              "D": "2/2",
+              "Special_Rules": [
+                "Rng",
+                "Torrent"
+              ],
+              "Effects": []
+            },
+            {
+              "name": "Grenade launcher",
+              "profiles": [
+                {
+                  "type": "Frag",
+                  "A": 4,
+                  "BS_WS": "4+",
+                  "D": "2/4",
+                  "Special_Rules": [
+                    "Blast"
+                  ],
+                  "Effects": []
+                },
+                {
+                  "type": "Krak",
+                  "A": 4,
+                  "BS_WS": "4+",
+                  "D": "4/5",
+                  "Special_Rules": [
+                    "AP1"
+                  ],
+                  "Effects": []
+                }
+              ]
+            },
+            {
+              "name": "Long-las",
+              "A": 4,
+              "BS_WS": "2+",
+              "D": "3/3",
+              "Special_Rules": [],
+              "Effects": [
+                "MW3"
+              ]
+            },
+            {
+              "name": "Meltagun",
+              "A": 4,
+              "BS_WS": "4+",
+              "D": "6/3",
+              "Special_Rules": [
+                "Rng",
+                "AP2",
+                "MW4"
+              ],
+              "Effects": []
+            },
+            {
+              "name": "Plasma gun",
+              "profiles": [
+                {
+                  "type": "Standard",
+                  "A": 4,
+                  "BS_WS": "4+",
+                  "D": "5/6",
+                  "Special_Rules": [
+                    "AP1"
+                  ],
+                  "Effects": []
+                },
+                {
+                  "type": "Supercharge",
+                  "A": 4,
+                  "BS_WS": "4+",
+                  "D": "5/6",
+                  "Special_Rules": [
+                    "AP2",
+                    "Hot"
+                  ],
+                  "Effects": []
+                }
+              ]
+            }
+          ],
+          "abilities": [],
+          "unique_actions": [],
+          "datacard_related": [
+            "VETERAN GUARDSMAN",
+            "IMPERIUM",
+            "ASTRA MILITARUM",
+            "<REGIMENT>",
+            "REPEATER VETERAN"
+          ]
+        }
+      }
+    ],
+    "Abilities": [
+      {
+        "GUARDSMEN ORDERS": {
+          "description": "Operatives in a VETERAN GUARDSMAN kill team have the following ability:",
+          "effect": "Once in each Strategy phase, when it is your turn to use a Strategic Ploy, if this operative is in the killzone, it can issue a Guardsmen Order. If it does, all friendly VETERAN GUARDSMAN operatives within ⬟[6] of and Visible to it are issued a Guardsmen Order.",
+          "extra": [
+            {
+              "title": "",
+              "description": "Each time a friendly operative issues a Guardsmen Order, select one Guardsmen Order below to take effect until the end of the Turning Point. If more than one Guardsmen Order could be issued by your kill team during the Turning Point, e.g. the Inspirational Leadership Tactical Ploy, they must be different Guardsmen Orders."
+            },
+            {
+              "title": "Move! Move! Move!",
+              "description": "Add [X] to the Movement characteristic of each friendly operative that was issued this order."
+            },
+            {
+              "title": "Take Aim!",
+              "description": "Each time a friendly operative that was issued this order makes a shooting attack, in the Roll Attack Dice step of that shooting attack, you can re-roll any or all of your attack dice results of 1."
+            },
+            {
+              "title": "Hold Position!",
+              "description": "Each time a shooting attack is made against a friendly operative that was issued this order, in the Roll Defence Dice step of that shooting attack, if that operative is in Cover, you can re-roll any or all of your defence dice results of 1. Friendly operatives that were issued this order cannot perform Dash or Charge actions."
+            },
+            {
+              "title": "Fix Bayonets!",
+              "description": "Each time a friendly operative that was issued this order fights in combat, in the Roll Attack Dice step of that combat, you can re-roll any or all of your attack dice results of 1."
+            }
+          ]
+        }
+      }
+    ],
+    "Strategic_Ploys": [
+      {
+        "OVERCHARGE LASGUNS": {
+          "cost": "1CP",
+          "description": "Until the end of the Turning Point, change the profile of lasguns that friendly VETERAN GUARDSMAN operatives are equipped with to the following:",
+          "effects": [
+            {
+              "Name": "Overcharge Lasguns",
+              "A": "-",
+              "BS/WS": "-",
+              "D": "-",
+              "profiles": [
+                {
+                  "Type": "Standard",
+                  "A": 4,
+                  "BS_WS": "4+",
+                  "D": "2/3",
+                  "Special Rules": [
+                    "-"
+                  ]
+                },
+                {
+                  "Type": "Overcharge",
+                  "A": 4,
+                  "BS_WS": "4+",
+                  "D": "2/3",
+                  "Special Rules": [
+                    "AP1",
+                    "Hot"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "TAKE COVER": {
+          "cost": "1CP",
+          "description": "Until the end of the Turning Point, each time a shooting attack is made against a friendly VETERAN GUARDSMAN operative, if it is in Cover, improve its Save characteristic by 1 for that shooting attack."
+        }
+      },
+      {
+        "INTO THE BREACH": {
+          "cost": "1CP",
+          "description": "Each friendly VETERAN GUARDSMAN operative within your drop zone can perform a free Dash action, but must finish that move closer to the enemy’s drop zone."
+        }
+      },
+      {
+        "CLEAR THE LINE": {
+          "cost": "1CP",
+          "description": "Until the end of the Turning Point, each time a friendly VETERAN GUARDSMAN operative fights in combat, before rolling your attack dice for that combat, you can retain one as a successful normal hit without rolling it."
+        }
+      }
+    ],
+    "Tactical_Ploys": [
+      {
+        "INSPIRATIONAL LEADERSHIP": {
+          "cost": "1CP",
+          "description": "Use this Tactical Ploy during a VETERAN GUARDSMAN LEADER operative’s activation. That operative issues a Guardsmen Order to all friendly VETERAN GUARDSMAN operatives within ⬟[6] of and Visible to it."
+        }
+      },
+      {
+        "IN DEATH, ATONEMENT": {
+          "cost": "1CP",
+          "description": "Use this Tactical Ploy when a ready friendly VETERAN GUARDSMAN operative is incapacitated. That operative is not removed from the killzone until the end of your next activation or the end of the battle (whichever comes first) and does not count as being injured."
+        }
+      },
+      {
+        "COMBINED ARMS": {
+          "cost": "1CP",
+          "description": "Use this Tactical Ploy after rolling your attack dice for a shooting attack made by a friendly VETERAN GUARDSMAN operative. If the target of that attack is an enemy operative that was targeted by another friendly VETERAN GUARDSMAN operative with a shooting attack during that Turning Point, you can re-roll any or all of your attack dice for that shooting attack."
         }
       }
     ]

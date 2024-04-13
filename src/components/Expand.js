@@ -77,7 +77,14 @@ function SimpleAccordionExpand({ name, details }) {
                     <Typography sx={{ fontWeight: 'bold' }}>{name}</Typography>
                 </AccordionSummary>
                 <AccordionDetails
-                    sx={{ borderColor: '#C3510A', color: '#fff', backgroundColor: '#1E1E1E' }}>
+                    sx={{ 
+                        borderColor: '#C3510A', 
+                        color: '#fff', 
+                        backgroundColor: '#1E1E1E',
+                        width: 'auto',
+                        marginLeft: '0',
+                        }}
+                        >
                     <Typography>
                         {details}
                     </Typography>

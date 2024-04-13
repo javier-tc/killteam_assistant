@@ -1,0 +1,189 @@
+{
+    "Kommando": {
+      "Troops": [
+        {
+          "Kommando Grot": {
+            "image": "images/kill_teams/kommando/kommando_grot.jpg",
+            "stats": {
+              "M": "3 ⬤[2]",
+              "APL": 2,
+              "GA": 1,
+              "DF": 3,
+              "SV": "5+",
+              "W": 5,
+              "Base": "25mm"
+            },
+            "weapons": [
+              {
+                "name": "Grot choppa",
+                "A": 3,
+                "BS_WS": "5+",
+                "D": "1/4",
+                "Special_Rules": [],
+                "Effects": []
+              }
+            ],
+            "abilities": [
+              {"Sneaky Zogger":"This operative cannot have an Engage order. In addition, this operative is always treated as having a Conceal order, regardless of any other rules (e.g. Vantage Point)."}
+            ],
+            "unique_actions": [
+              {"Grappling Hook (1AP)":"Select a point on a terrain feature that is Visible to this operative (treat that point as an intended target). Perform a free Normal Move action with this operative, moving in a single straight line with an unlimited Movement as though it can FLY. It must finish that move within ▲[1] of that point. This operative cannot perform the Operate Hatch action during this action."}
+            ],
+            "datacard_related": [
+              "SNEAKY GIT"
+            ]
+          }
+        },
+        {
+          "Kommando Nob": {
+            "image": "images/kill_teams/kommando/kommando_nob.jpg",
+            "stats": {
+              "M": "3 ⬤[2]",
+              "APL": 2,
+              "GA": 1,
+              "DF": 3,
+              "SV": "4+",
+              "W": 13,
+              "Base": "32mm"
+            },
+            "weapons": [
+              {
+                "name": "Slugga",
+                "A": 4,
+                "BS_WS": "4+",
+                "D": "3/4",
+                "Special_Rules": [
+                  "Rng ⬟[6]"
+                ],
+                "Effects": []
+              },
+              {
+                "name": "Big choppa",
+                "A": 4,
+                "BS_WS": "2+",
+                "D": "5/6",
+                "Special_Rules": [],
+                "Effects": []
+              },
+              {
+                "name": "Power klaw",
+                "A": 4,
+                "BS_WS": "3+",
+                "D": "5/7",
+                "Special_Rules": [
+                  "Brutal"
+                ],
+                "Effects": []
+              }
+            ],
+            "abilities": [
+              {"Get it Dun!": "Each time this operative is activated, you can select one friendly KOMMANDO💀 operative within ⬟[6] of and Visible to it. Add 1 to the selected operative’s APL."}
+            ],
+            "unique_actions": [],
+            "datacard_related": [
+              "JUST A SCRATCH",
+              "SNEAKY GIT"
+            ]
+          }
+        },
+        {
+          "Bomb Squig": {
+            "image": "images/kill_teams/kommando/bomb_squig.jpg",
+            "stats": {
+              "M": "3 ⬤[2]",
+              "APL": 2,
+              "GA": 1,
+              "DF": 3,
+              "SV": "6+",
+              "W": 6,
+              "Base": "25mm"
+            },
+            "weapons": [
+              {
+                "name": "Dynamite",
+                "A": 4,
+                "BS_WS": "3+",
+                "D": "5/6",
+                "Special_Rules": [
+                  "AP1",
+                  "Bomb Squig"
+                ],
+                "Effects": [
+                  "P2"
+                ]
+              },
+              {
+                "name": "Vicious bite",
+                "A": 3,
+                "BS_WS": "4+",
+                "D": "4/5",
+                "Special_Rules": [],
+                "Effects": []
+              }
+            ],
+            "abilities": [
+              {"Bomb Squig": "This operative can perform a Shoot action with this weapon if it is within Engagement Range of an enemy operative. When this operative performs a Shoot action and selects this ranged weapon, make a shooting attack against each other operative within its Engagement Range of it (even if it has friendly operatives within its Engagement Range) with this weapon - each of them is a valid target and cannot be in Cover. After all of those shooting attacks have been made, this operative is incapacitated and do not roll for its BOOM! ability. This operative cannot make a shooting attack with this weapon by performing an Overwatch action."},
+              {"THE BALANCE DATASLATE": "This operative’s APL characteristic cannot be positively modified."},
+              {"BOOM!": "If this operative is incapacitated, roll one D6: on a 3+, it makes a shooting attack using its dynamite."},
+              {"Stoopid": "This operative cannot perform mission actions, cannot perform the Pick Up action and cannot have a Conceal order. It cannot be equipped with equipment. In narrative play, it cannot gain (or lose) experience and automatically passes Casualty tests."}
+            ],
+            "unique_actions": [],
+            "datacard_related": [
+              "JUST A SCRATCH"
+            ]
+          }
+        }
+      ],
+      "Abilities": [
+        {
+          "THROAT SLITTAS": "This operative (excluding BOMB SQUIG operatives) can perform a Charge action while it has a Conceal order."
+        }
+      ],
+      "Strategic_Ploys": [
+        {
+          "SSSSHHHH!": {
+            "cost": "1CP",
+            "description": "Friendly KOMMANDO💀 operatives that are not within Line of Sight of enemy operatives, or have a Conceal order and are more than ⬟[6] from enemy operatives, can immediately perform a free Dash action. You can only use this Strategic Ploy once."
+          }
+        },
+        {
+          "DAKKA! DAKKA! DAKKA!": {
+            "cost": "1CP",
+            "description": "Until the end of the Turning Point, each time a friendly KOMMANDO💀 operative makes a shooting attack, in the Roll Attack Dice step of that shooting attack, if you retain any critical hits, you can select one of your failed hits to be retained as a successful normal hit."
+          }
+        },
+        {
+          "WAAAGH!": {
+            "cost": "1CP",
+            "description": "Until the end of the Turning Point, each time a friendly KOMMANDO💀 operative fights in combat, in the Roll Attack Dice step of that combat, when you would retain two or more normal hits, you can select one of those hits to be retained as a critical hit instead."
+          }
+        },
+        {
+          "SKULK ABOUT": {
+            "cost":"1CP",
+            "description":"Until the end of the Turning Point, each time a shooting attack is made against a friendly KOMMANDO💀 operative, before rolling defence dice for that shooting attack, if it has a Conceal order, you can retain one as a successful normal save without rolling it, regardless of any rules that treat the operative as having an Engage order (e.g. Vantage Point)."
+        }
+      }
+      ],
+      "Tactical_Ploys": [
+        {
+          "JUST A SCRATCH": {
+            "cost": "1CP",
+            "description": "Use this Tactical Ploy in the Resolve Successful Hits step of a shooting attack or combat, when damage would be inflicted on a friendly KOMMANDO💀 operative (excluding BOMB SQUIG operatives) from a normal hit. Ignore the damage inflicted from that attack dice."
+          }
+        },
+        {
+          "KRUMP 'EM": {
+            "cost": "1CP",
+            "description": "Use this Tactical Ploy at the end of the Firefight phase. Select one friendly KOMMANDO💀 operative. It can perform a free Fight action."
+          }
+        },
+        {
+          "SNEAKY GIT": {
+            "cost": "1CP",
+            "description": "Use this Tactical Ploy in the Set Up Operatives step of the mission sequence. Select one friendly KOMMANDO💀 operative (excluding BOMB SQUIG operatives). That operative can be set up with a Conceal order anywhere on the battlefield that is within ▲[1] of Heavy terrain and more than ⬟[6] from enemy operatives and the enemy drop zone. You can only use it once per battle, and that operative cannot have its order changed in the first Turning Point (i.e. from the Infiltrate scouting option)."
+          }
+        }
+      ]
+    }
+}

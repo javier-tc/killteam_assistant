@@ -3,7 +3,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
-
+import AddCircleRoundedIcon from '@mui/icons-material/AddCircleRounded';
 
 function TroopButton({ increase }) {
   return (
@@ -14,8 +14,14 @@ function TroopButton({ increase }) {
         variant='contained'
         size='small'
         sx={{ maxWidth: '20px', maxHeight: '20px', minWidth: '20px', minHeight: '20px' }}
+        style={{
+          backgroundColor: '#363636',
+          color: 'green',
+        }}
       >
-        +
+        <AddCircleRoundedIcon 
+          sx={{ maxWidth: '18px', maxHeight: '18px', minWidth: '15px', minHeight: '15px' }}
+        />
       </Button>
     </>
   );
